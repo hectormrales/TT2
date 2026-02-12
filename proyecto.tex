@@ -1,53 +1,129 @@
-\documentclass[10pt]{book}
+\documentclass[12pt, letterpaper]{book}
 
+% --- CONFIGURACIÓN PREVIA DE BABEL ---
+\PassOptionsToPackage{spanish,mexico}{babel}
+% --- CONFIGURACIÓN PREVIA DE HYPERREF ---
+\PassOptionsToPackage{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}{hyperref}
+
+% --- PAQUETES PARA ANÁLISIS DE REQUERIMIENTOS ---
 \usepackage{cdt/cdtUsecases}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper, margin=2.5cm}
+\usepackage{graphicx}
+\graphicspath{{images/}{imagenes/}} % Rutas de imágenes
+\usepackage{booktabs}
+% xcolor y listings ya se cargan en cdt/cdtUsecases.sty
+\usepackage{colortbl} % Para colores en tablas
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{txfonts}
 
+% --- CONFIGURACIÓN DE CÓDIGO (LISTINGS) ---
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red}
+}
 
-\input{config}
+% --- CONFIGURACIÓN DEL PROYECTO ---
+\newcommand{\Proyecto}{Sistema Inteligente para la Identificación y Seguimiento de Derechos de NNA afectados por feminicidios en México}
+\newcommand{\Componente}{Análisis de Requerimientos y Especificación del Sistema}
+\newcommand{\Etapa}{Trabajo Terminal 1 - Semestre 2025-2026/1}
+\newcommand{\Consultora}{Herrera Ramírez Emilio Alejandro \\ Morales Martínez Héctor Alberto}
+\newcommand{\Cliente}{Instituto Politécnico Nacional \\ Escuela Superior de Cómputo}
 
+% --- CONFIGURACIÓN DEL DOCUMENTO ---
 \title{\Proyecto\bigskip\\\Componente}
-\subtitle{\Etapa}
 \author{\Consultora}
-\organization{\Cliente}
-\showInstrucciones
-\date{\color{red}Borrador Fecha de creación de documento\\(para revisión)}
+\date{Febrero 2026 \\ Versión 1.0 - TT1}
 
-%\date{\color{green}Version 1.0}
+% Comando para mostrar/ocultar instrucciones (comentar para versión final)
+% \showInstrucciones
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\renewcommand{\listtablename}{Índice de tablas}
-\renewcommand{\tablename}{Tabla} 
-\ThisLRCornerWallPaper{1}{theme/bannerAzul}
-\maketitle
-\thispagestyle{empty}
 
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\figurename}{Figura}
+
+% --- PORTADA ---
 \frontmatter
+\input{portada.tex}
+
+% --- PROJECT CHARTER ---
+\cleardoublepage
+\input{projectCharter}
+
+% --- ÍNDICES ---
 \tableofcontents
 \listoffigures
 \listoftables
 
-\include{projectCharter}
-
-\mainmatter
-\LRCornerWallPaper{1}{theme/pleca}
+% --- RESUMEN EJECUTIVO ---
+\chapter*{Resumen Ejecutivo}
+\addcontentsline{toc}{chapter}{Resumen Ejecutivo}
+\input{capitulo_resumen.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
 
 %=========================================================
-\include{1introduccion}
+% CAPÍTULO 1: INTRODUCCIÓN
+%=========================================================
+\input{1introduccion}
 
 %=========================================================
-\include{2ModeloDelAlcance}
+% CAPÍTULO 2: MODELO DEL ALCANCE
+%=========================================================
+\input{2ModeloDelAlcance}
 
 %=========================================================
-\include{3ModeloDelNegocio}
+% CAPÍTULO 3: MODELO DEL NEGOCIO
+%=========================================================
+\input{3ModeloDelNegocio}
 
 %=========================================================
-\include{4ModeloDinamico}
+% CAPÍTULO 4: MODELO DINÁMICO (Casos de Uso)
+%=========================================================
+\input{4ModeloDinamico}
 
 %=========================================================
-\include{5ModeloDeInteraccion}
+% CAPÍTULO 5: MODELO DE INTERACCIÓN
+%=========================================================
+\input{5ModeloDeInteraccion}
+
+%=========================================================
+% CAPÍTULO 6: MARCO TEÓRICO (Opcional - si deseas incluirlo)
+%=========================================================
+% \chapter{Marco Teórico}
+% \input{capitulo_marcoteorico.tex}
+
+%=========================================================
+% CAPÍTULO 7: ESTADO DEL ARTE (Opcional - si deseas incluirlo)
+%=========================================================
+% \chapter{Estado del Arte}
+% \input{capitulo_estadoarte.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFÍA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{bibliografia}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ANEXOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\chapter{Anexos}
+\input{anexos.tex}
 
 \end{document}

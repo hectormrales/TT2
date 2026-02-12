@@ -1,40 +1,89 @@
-% !TeX root = proyecto.tex
+% !TeX root = main.tex
 
 %=========================================================
 \chapter{Introducción}
+\label{cap:introduccion}
 
+Este documento contiene el análisis de requerimientos del proyecto ``{\em Sistema Inteligente para la Identificación y Seguimiento de Derechos de Niñas, Niños y Adolescentes (NNA) afectados por feminicidios en México}'' que servirá como base para el análisis, diseño, construcción, pruebas y aceptación del proyecto.
 
-\cdtInstrucciones{
-	Presentar el documento, indicando su contenido, a quien va dirigido, quien lo realizó, por que razón, dónde y cuando. \\
-}
-	Este documento contiene el análisis de requerimientos del proyecto ``{\em Nombre del proyecto}'' que servirá como base para el análisis, diseño, construcción, pruebas y aceptación del proyecto.
+El documento fue elaborado por Herrera Ramírez Emilio Alejandro y Morales Martínez Héctor Alberto, estudiantes de Ingeniería en Sistemas Computacionales de la Escuela Superior de Cómputo del Instituto Politécnico Nacional, bajo la dirección del M. en C. Ulises Vélez Saldaña y el Dr. Gabriel Hurtado Aviles, durante el periodo académico 2025-2026 en la Ciudad de México.
 
 %---------------------------------------------------------
 \section{Presentación}
+\label{sec:presentacion}
 
+Entre 2010 y 2023, más de 8,000 mujeres fueron víctimas de feminicidio en México según la Secretaría de Gobernación. Detrás de estas cifras existen miles de niños, niñas y adolescentes que quedaron huérfanos. La Red por los Derechos de la Infancia en México (REDIM) estima al menos 3,500 NNA que perdieron a su madre por feminicidio, pero no existe un censo oficial ni sistema de seguimiento estructurado. La información permanece dispersa en notas periodísticas, comunicados de fiscalías estatales y archivos de organizaciones civiles, lo que impide dimensionar el problema, identificar patrones geográficos o temporales, y diseñar políticas públicas efectivas para garantizar los derechos de estas infancias afectadas.
 
-\cdtInstrucciones{
-	Presente en un par de párrafos el contexto y el problema en que se define el proytecto.
-}
+Las organizaciones de la sociedad civil, como la Fundación Futuro con Derechos, dedican recursos considerables a la revisión manual de medios de comunicación buscando casos donde se mencione a hijos de víctimas. Sin embargo, la metodología manual es insuficiente ante el volumen de información disponible, resultando en cobertura limitada y muchos casos que pasan desapercibidos. Se requiere un sistema automatizado que recolecte, procese y estructure esta información dispersa para transformarla en datos consultables y accionables.
 
-\cdtInstrucciones{
-	Indique el propósito del documento, a quien va dirigido y como debe ser utilizado el documento.
-}
-	
+El propósito de este documento es presentar el análisis detallado de requerimientos funcionales y no funcionales del sistema, describir la arquitectura técnica implementada mediante prototipos incrementales, documentar las estrategias de recolección de datos y procesamiento de lenguaje natural, y establecer las bases para las fases siguientes del proyecto. Este documento está dirigido a los directores del trabajo terminal, sinodales evaluadores, organizaciones de la sociedad civil interesadas en la problemática, y desarrolladores que participen en la evolución del sistema.
+
+El documento debe utilizarse como referencia técnica para comprender las decisiones de diseño, validar el cumplimiento de objetivos establecidos en TT1, identificar limitaciones reconocidas que serán abordadas en TT2, y servir como punto de partida para la documentación de usuario final y manuales técnicos que se desarrollarán en la segunda fase del proyecto.
+
 %---------------------------------------------------------
 \section{Organización del contenido}
+\label{sec:organizacion}
 
-\cdtInstrucciones{
-	Indique el contenido y organización del documento.
-}
-	En el capítulo \ref{cap:reqUsr} ...
-	
-	En el capítulo \ref{cap:reqSist} ...
+El presente documento se estructura en ocho capítulos que describen de manera integral el desarrollo del sistema:
+
+El \textbf{Capítulo 1: Introducción} presenta el contexto del proyecto, planteamiento del problema, justificación social y tecnológica, objetivos generales y específicos, así como los alcances y limitaciones de la fase TT1.
+
+El \textbf{Capítulo 2: Marco Teórico} establece los fundamentos conceptuales necesarios para comprender el sistema, incluyendo procesamiento de lenguaje natural, técnicas de web scraping, clustering, modelado de tópicos, métricas de evaluación y tecnologías utilizadas (Python, Flask, Docker, scikit-learn).
+
+El \textbf{Capítulo 3: Estado del Arte} analiza proyectos relacionados a nivel nacional e internacional, incluyendo el Mapa de Feminicidios en México, Data Cívica, sistemas de monitoreo de medios, y plataformas académicas de análisis de noticias, identificando fortalezas y diferencias con el presente proyecto.
+
+El \textbf{Capítulo 4: Metodología de Desarrollo} documenta la evolución a través de tres prototipos: P0 (web scraping directo fallido), P1 (sistema básico con RSS y K-Means), y P2 (sistema avanzado con triple estrategia de recolección y detector especializado), describiendo implementación, resultados y lecciones aprendidas de cada fase.
+
+El \textbf{Capítulo 5: Desarrollo y Arquitectura de la Solución} detalla la arquitectura Docker implementada, componentes del sistema (recolector multi-fuente, detector dual-etapa, pipeline PLN, API REST, dashboard web), flujo de datos, y decisiones técnicas de diseño.
+
+El \textbf{Capítulo 6: Resultados Preliminares y Pruebas} presenta las métricas de desempeño del Prototipo 2, incluyendo cobertura de recolección (281 noticias únicas), precisión del detector (90\% con 10\% falsos positivos), análisis de clusters generados, y evaluación de calidad mediante coherencia de tópicos LDA.
+
+El \textbf{Capítulo 7: Conclusiones Parciales} sintetiza los logros de TT1, valida la viabilidad técnica del enfoque propuesto, reconoce limitaciones identificadas, y establece las bases para la continuación del proyecto.
+
+El \textbf{Capítulo 8: Trabajo a Futuro} define el alcance de TT2, priorizando la implementación de clasificación semántica con transformers, extracción de entidades nombradas (NER), migración a base de datos relacional, ampliación de cobertura temporal, y desarrollo de interfaz de usuario completa para organizaciones civiles.
 
 %---------------------------------------------------------
 \section{Notación, símbolos y convenciones utilizadas}
+\label{sec:notacion}
 
-\cdtInstrucciones{
-	Indique la notacion utilizada así como nórmas o estándares de documentación utilizados en el documento.
-}	
+El documento emplea las siguientes convenciones de notación y estándares de documentación:
 
+\begin{itemize}
+    \item \textbf{Nomenclatura de Prototipos:} Los prototipos se identifican como P0, P1 y P2, representando las fases de desarrollo Prototipo 0 (fallido), Prototipo 1 (básico) y Prototipo 2 (avanzado), respectivamente.
+    
+    \item \textbf{Identificadores de Componentes:} Los componentes del sistema se nombran en formato \texttt{snake\_case} según convenciones Python (ejemplo: \texttt{data\_collector.py}, \texttt{simplified\_analyzer.py}).
+    
+    \item \textbf{Acrónimos y Abreviaturas:}
+    \begin{itemize}
+        \item \textbf{NNA:} Niñas, Niños y Adolescentes
+        \item \textbf{REDIM:} Red por los Derechos de la Infancia en México
+        \item \textbf{PLN:} Procesamiento de Lenguaje Natural
+        \item \textbf{RSS:} Really Simple Syndication
+        \item \textbf{API:} Application Programming Interface
+        \item \textbf{REST:} Representational State Transfer
+        \item \textbf{TF-IDF:} Term Frequency - Inverse Document Frequency
+        \item \textbf{LDA:} Latent Dirichlet Allocation
+        \item \textbf{DBSCAN:} Density-Based Spatial Clustering of Applications with Noise
+        \item \textbf{NER:} Named Entity Recognition
+        \item \textbf{TT1/TT2:} Trabajo Terminal semestre 1 y semestre 2
+    \end{itemize}
+    
+    \item \textbf{Referencias Cruzadas:} Las referencias a figuras, tablas y capítulos utilizan comandos LaTeX estándar (\verb|\ref{}|, \verb|\label{}|) para mantener consistencia automática.
+    
+    \item \textbf{Código Fuente:} Los fragmentos de código se presentan utilizando el entorno \texttt{lstlisting} con resaltado de sintaxis para Python, con numeración de líneas cuando sea relevante.
+    
+    \item \textbf{Métricas y Valores:} Las métricas de evaluación se expresan en porcentaje cuando representan tasas (precisión, recall), y en valores absolutos para conteos (número de noticias, features, clusters).
+    
+    \item \textbf{Énfasis Tipográfico:} 
+    \begin{itemize}
+        \item \textit{Cursivas} para términos técnicos en su primera aparición o conceptos destacados
+        \item \textbf{Negritas} para elementos de especial relevancia o términos clave en definiciones
+        \item \texttt{Monoespaciado} para nombres de archivos, comandos, código, URLs y parámetros técnicos
+    \end{itemize}
+    
+    \item \textbf{Estándar de Documentación:} El documento sigue las convenciones de trabajos terminales de ESCOM-IPN, con estructura de capítulos, formato de referencias bibliográficas estilo APA, y numeración jerárquica de secciones.
+    
+    \item \textbf{Notación Matemática:} Las fórmulas matemáticas (similitud coseno, TF-IDF, métricas de evaluación) se expresan utilizando el entorno matemático de LaTeX con la notación estándar de álgebra lineal y estadística.
+\end{itemize}
+
+El documento utiliza el sistema de gestión de referencias bibliográficas BibTeX con estilo \texttt{apalike}, asegurando consistencia en las citas y formato de la bibliografía conforme a estándares académicos internacionales.

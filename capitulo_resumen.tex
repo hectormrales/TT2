@@ -1,0 +1,51 @@
+% Resumen Ejecutivo del Proyecto
+
+\section*{Contexto del Proyecto}
+
+Entre 2010 y 2023, más de 8,000 mujeres fueron víctimas de feminicidio en México, dejando miles de niñas, niños y adolescentes en situación de orfandad. La información sobre estos casos permanece dispersa en notas periodísticas, comunicados de fiscalías y archivos de organizaciones civiles, impidiendo dimensionar el problema de manera estructurada y diseñar políticas públicas efectivas.
+
+\section*{Objetivo General}
+
+Desarrollar un sistema inteligente que automatice la recolección, procesamiento y estructuración de información relacionada con niñas, niños y adolescentes afectados por feminicidios en México, mediante técnicas de procesamiento de lenguaje natural y análisis de datos, para transformar información dispersa en datos consultables y accionables.
+
+\section*{Alcance de la Fase TT1}
+
+Durante el primer semestre del Trabajo Terminal se desarrollaron e implementaron tres prototipos incrementales:
+
+\begin{itemize}
+    \item \textbf{Prototipo 0 (P0):} Aproximación inicial mediante web scraping directo que identificó limitaciones técnicas y legales de acceso a fuentes periodísticas.
+    
+    \item \textbf{Prototipo 1 (P1):} Sistema básico implementando recolección mediante RSS feeds, vectorización TF-IDF y clustering con K-Means para agrupar noticias relacionadas.
+    
+    \item \textbf{Prototipo 2 (P2):} Sistema avanzado con arquitectura Docker, triple estrategia de recolección de datos (RSS, scraping de listados, APIs periodísticas), detector de relevancia de dos etapas, pipeline completo de PLN, API REST y dashboard web para visualización.
+\end{itemize}
+
+\section*{Resultados Principales}
+
+El Prototipo 2 demostró la viabilidad técnica del enfoque propuesto con los siguientes resultados:
+
+\begin{itemize}
+    \item Recolección automática de 281 noticias únicas en periodo de prueba
+    \item Precisión del 90\% en detección de casos relevantes
+    \item Tasa de falsos positivos del 10\%
+    \item Cobertura de múltiples entidades federativas
+    \item Generación automática de clusters temáticos coherentes
+\end{itemize}
+
+\section*{Trabajo a Futuro (TT2)}
+
+La segunda fase del proyecto se enfocará en:
+
+\begin{enumerate}
+    \item Implementación de clasificación semántica con transformers (BERT multilingüe)
+    \item Extracción de entidades nombradas (NER) para identificación automática de nombres, ubicaciones y fechas
+    \item Migración a base de datos relacional (PostgreSQL)
+    \item Ampliación de cobertura temporal (2015-2025)
+    \item Desarrollo de interfaz de usuario completa para organizaciones civiles
+    \item Sistema de validación y corrección manual supervisada
+    \item Módulo de análisis estadístico y visualizaciones avanzadas
+\end{enumerate}
+
+\section*{Impacto Esperado}
+
+El sistema permitirá a organizaciones como la Fundación Futuro con Derechos y la REDIM contar con información estructurada y actualizada sobre NNA afectados por feminicidios, facilitando el diseño de estrategias de acompañamiento, defensa de derechos y generación de políticas públicas basadas en evidencia.

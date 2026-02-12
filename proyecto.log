@@ -1,15 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.30)  26 DEC 2025 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.30)  12 FEB 2026 16:22
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./proyecto.tex
-(proyecto.tex
+**"c:/Users/Hector.Morales/Documents/TT2 NNA/TT2/proyecto.tex"
+(c:/Users/Hector.Morales/Documents/TT2 NNA/TT2/proyecto.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
 (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
-File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@chapter=\count276
@@ -24,39 +25,24 @@ File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 ) (cdt/cdtUsecases.sty (cdt/cdtRequerimientos.sty (cdt/cdtBook.sty
-Package: cdt/cdtBook 2010/05/30, v1.0 CDT-ESCOM-IPN Plantilla para reportes de 
-la Coordinación
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.
-sty
+Package: cdt/cdtBook 2010/05/30, v1.0 CDT-ESCOM-IPN Plantilla para reportes de la Coordinación
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.
-sty
-Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLa
-TeX and XeLaTeX
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2050.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2052.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2054.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2055.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2056.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2058.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2083.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
 \U@D=\dimen149
 \l@unhyphenated=\language79
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbab
-el.def)
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
 
@@ -68,34 +54,20 @@ Package babel Warning: Configuration files are deprecated, as
 *************************************
 * Local config file bblopts.cfg used
 *
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.
-cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale
-/es\babel-spanish.tex)
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex)
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 4295.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\
-spanish.ldf
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks19
 \es@quotdepth=\count286
 Package babel Info: Making " an active character on input line 570.
-Package babel Info: Making . an active character on input line 675.
-Package babel Info: Making < an active character on input line 722.
-Package babel Info: Making > an active character on input line 722.
 ))
-LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) 
-on input line 12.
-LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
- on input line 12.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\cmbri
-ght.sty
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 12.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 12.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\cmbright.sty
 Package: cmbright 2005/04/13 v8.1 (WaS)
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -160,68 +132,53 @@ LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 64.
 LaTeX Font Info:    Redeclaring math symbol \varphi on input line 65.
 LaTeX Info: Redefining \LaTeX on input line 129.
 LaTeX Info: Redefining \LaTeXe on input line 139.
-LaTeX Font Info:    Trying to load font information for OT1+cmbr on input line 
-144.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\ot1cm
-br.fd
+LaTeX Font Info:    Trying to load font information for OT1+cmbr on input line 144.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\ot1cmbr.fd
 File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
-icx.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyva
-l.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
-ics.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.
-sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\g
-raphics.cfg
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\p
-dftex.def
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color
-.sty
-Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\c
-olor.cfg
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 149.
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvips
-nam.def
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 265.
+
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathc
-olor.ltx))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/wallpaper\wall
-paper.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/wallpaper\wallpaper.sty
 Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.st
-y
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count287
 \calc@Bcount=\count288
@@ -233,9 +190,7 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count289
 \calc@Cskip=\skip53
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pi
-c.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen154
 \ESO@tempdimb=\dimen155
@@ -248,11 +203,8 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \tileheight=\skip59
 \tileX=\skip60
 \tileY=\skip61
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancy
-hdr.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip62
 \f@nch@offset@elh=\skip63
 \f@nch@offset@erh=\skip64
@@ -268,17 +220,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip74
 \f@nch@widthR=\skip75
 \@temptokenb=\toks21
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geome
-try.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex
-.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.
-sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count290
@@ -293,11 +239,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
 \Gm@dimlist=\toks22
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geome
-try.cfg))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncyc
-hap.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip76
 \mylen=\skip77
@@ -306,13 +248,9 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip80
 \pyy=\skip81
 \pxx=\skip82
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvo
-sym.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtabl
-e.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \LTleft=\skip83
 \LTright=\skip84
@@ -330,94 +268,59 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \c@LT@tables=\count296
 \c@LT@chunks=\count297
 \LT@p@ftn=\toks23
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyper
-ref.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvse
-tkeys.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys
-\kvdefinekeys.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pd
-fescape.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxc
-mds.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\p
-dftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\in
-fwarerr.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolo
-r.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\namer
-ef.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refco
-unt.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestri
-ng\gettitlestring.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvop
-tions.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count298
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etool
-box.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count299
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\st
-ringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen165
 \Hy@linkcounter=\count300
 \Hy@pagecounter=\count301
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1en
-c.def
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intc
-alc.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count302
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc
-.def
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4066.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4066.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4066.
 Package hyperref Info: Hyper figures OFF on input line 4195.
@@ -428,22 +331,16 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count303
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen166
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitse
-t.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\b
-igintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count304
 \Field@Width=\dimen167
@@ -460,32 +357,21 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count307
 )
 Package hyperref Info: Driver: hpdftex.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdft
-ex.def
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count308
 \c@bookmark@seq@number=\count309
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck
-\rerunfilecheck.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounte
-r\uniquecounter.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip87
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssy
-mb.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfo
-nts.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks24
 \symAMSa=\mathgroup4
@@ -493,13 +379,9 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\color
-tbl.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.st
-y
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen169
 \ar@mcellbox=\box58
@@ -512,22 +394,16 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip90
 \rownum=\count310
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multi
-row.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip91
 \multirow@cntb=\count311
 \multirow@dima=\skip92
 \bigstrutjot=\dimen171
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/chapterfolder\
-chapterfolder.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/chapterfolder\chapterfolder.sty
 Package: chapterfolder 2005/11/24 v2.0 Package for dealing with folder
 \c@@cf@currentpos=\count312
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
-ngs.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count313
 \lst@gtempboxa=\box60
 \lst@token=\toks27
@@ -540,26 +416,18 @@ ngs.sty
 \lst@newlines=\count317
 \lst@lineno=\count318
 \lst@maxwidth=\dimen175
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpa
-tch.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmi
-sc.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 \c@lstnumber=\count319
 \lst@skipnumbers=\count320
 \lst@framebox=\box61
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
-ngs.cfg
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/keystroke\keys
-troke.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/keystroke\keystroke.sty
 Package: keystroke 2010/04/23 v1.6 3D keystrokes (SuSE GmbH/RN)
 \suse@key=\box62
 \keystroke@left=\box63
@@ -580,70 +448,39 @@ File: keystroke_right.pdf Graphic file (type pdf)
 <use keystroke_right.pdf>
 Package pdftex.def Info: keystroke_right.pdf  used on input line 173.
 (pdftex.def)             Requested size: 42.15738pt x 195.73076pt.
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\
-pgfkeys.sty
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfkeys.code.tex
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks28
 \pgfkeys@temptoks=\toks29
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfkeyslibraryfiltered.code.tex
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks30
-)))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\f
-ontawesome5.sty
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3
-.sty
+))) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5.sty (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2025-10-09 L3 programming layer (loader) 
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
-ckend-pdftex.def
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
 ))
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3k
-eys2e\l3keys2e.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpa
-rse\xparse.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\f
-ontawesome5-generic-helper.sty
-Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
-tawesome5
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\f
-ontawesome5-mapping.def)))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmat
-h.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fontawesome5
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesome5-mapping.def))) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip93
 
 For additional information on amsmath, use the `?' option.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstex
-t.sty
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen
-.sty
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks31
 \ex@=\dimen176
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy
-.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen177
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn
-.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count322
@@ -693,9 +530,26 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2949.
 LaTeX Info: Redefining \] on input line 2950.
-))
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfont
-s.sty
+)) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen185
+\lightrulewidth=\dimen186
+\cmidrulewidth=\dimen187
+\belowrulesep=\dimen188
+\belowbottomsep=\dimen189
+\aboverulesep=\dimen190
+\abovetopsep=\dimen191
+\cmidrulesep=\dimen192
+\cmidrulekern=\dimen193
+\defaultaddspace=\dimen194
+\@cmidla=\count334
+\@cmidlb=\count335
+\@aboverulesep=\dimen195
+\@belowrulesep=\dimen196
+\@thisruleclass=\count336
+\@lastruleclass=\count337
+\@thisrulewidth=\dimen197
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -778,129 +632,110 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \symlargesymbolsA=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
-LaTeX Encoding Info:    Redeclaring text symbol \L (encoding OT1) on input line
- 160.
-LaTeX Encoding Info:    Redeclaring text symbol \l (encoding OT1) on input line
- 161.
-LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding OT1) on
- input line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \L (encoding OT1) on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \l (encoding OT1) on input line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding OT1) on input line 163.
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
 LaTeX Info: Redefining \not on input line 1043.
-) (config.tex)
-LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
-19.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txs
-s.fd
+)
+LaTeX Font Info:    Trying to load font information for OT1+txss on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 19.
+(Font)              scaled to size 11.39996pt on input line 50.
+ (proyecto.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 8.
 
-No file proyecto.aux.
+
+LaTeX Warning: Label `UCX.introduceDatos' multiply defined.
+
+)
 \openout1 = `proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 19.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-19.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxm
-i.fd
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 50.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-19.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxs
-y.fd
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-19.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxe
-x.fd
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 1
-9.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa
-.fd
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 50.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 19.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
-pp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen185
+\scratchcounter=\count338
+\scratchdimen=\dimen198
 \scratchbox=\box68
-\nofMPsegments=\count335
-\nofMParguments=\count336
+\nofMPsegments=\count339
+\nofMParguments=\count340
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen186
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen199
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
 \everyMPtoPDFconversion=\toks37
-)
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
-pstopdf-base.sty
+) (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epsto
-pdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=595.8007pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-47.65834pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-77.9174pt
 * \headheight=56.9055pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -910,553 +745,1286 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 50.
+(proyecto.out) (proyecto.out)
 \@outlinefile=\write3
 \openout3 = `proyecto.out'.
 
-\c@lstlisting=\count340
+\c@lstlisting=\count344
+ (portada.tex
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 24.
+(Font)              scaled to size 16.41594pt on input line 6.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 16.41594pt on input line 6.
+<theme/pleca.png, id=282, 1638.12pt x 231.264pt>
+File: theme/pleca.png Graphic file (type png)
+<use theme/pleca.png>
+Package pdftex.def Info: theme/pleca.png  used on input line 9.
+(pdftex.def)             Requested size: 118.0078pt x 16.65945pt.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 24.
+(Font)              scaled to size 23.63593pt on input line 11.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 24.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 2
-4.
+(Font)              scaled to size 13.67995pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 15.
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr
-.fd
-File: ot1txr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-4.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya
-.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-4.
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb
-.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-4.
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia
-.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-4.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc
-.fd
-File: utxsyc.fd 2000/12/15 v3.1
-)
-
-<theme/bannerAzul.png, id=6, 711.1368pt x 336.7782pt>
-File: theme/bannerAzul.png Graphic file (type png)
-<use theme/bannerAzul.png>
-Package pdftex.def Info: theme/bannerAzul.png  used on input line 24.
-(pdftex.def)             Requested size: 614.30019pt x 290.91858pt.
 [1
 
 
-{C:/Users/Hector.Morales/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/U
-sers/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} 
-<./theme/bannerAzul.png>]
 
-[2
+{C:/Users/Hector.Morales/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./theme/pleca.png>]
+
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 11.39996pt on input line 30.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 30.
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+) [2]) (projectCharter.tex
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 15.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 15.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 15.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 15.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 17.
+
+Overfull \hbox (18.39423pt too wide) in paragraph at lines 20--20
+[]|\OT1/txss/b/n/12 Background/Contexto:| 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+txss on input line 35.
+(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txss.fd
+File: ts1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `TS1/txss/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 35.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\OT1/txss/m/n/12 (Nombre de la(s)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/txss/m/n/12 (Nombre de la(s)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]|\OT1/txss/m/n/12 (Nombre de la(s)
+ []
+
+)
+
+[3
+
+
 
 ]
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 27.
 
-No file proyecto.toc.
+[4] (proyecto.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Font shape `OT1/txss/b/sc' will be
+(Font)              scaled to size 11.39996pt on input line 2.
+
+
+LaTeX Font Info:    Font shape `OT1/txss/m/sc' will be
+(Font)              scaled to size 11.39996pt on input line 29.
+[5
+
+]
+
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 72.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+[6])
 \tf@toc=\write4
 \openout4 = `proyecto.toc'.
 
 
 
-LaTeX Font Info:    Font shape `OT1/txss/m/sc' will be
-(Font)              scaled to size 9.49997pt on input line 28.
-[1
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+[7]
 
-]
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+[8
 
-<theme/headerPar.png, id=25, 1204.5pt x 200.75pt>
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 28.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 28.
-LaTeX Font Info:    Font shape `OT1/txss/m/sc' will be
-(Font)              scaled to size 7.59998pt on input line 28.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 28.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <5> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 28.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 4.74998pt on input line 28.
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 28.
-
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\umvs.
-fd) [2
-
- <./theme/headerPar.png>]
-No file proyecto.lof.
+] (proyecto.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@lof=\write5
 \openout5 = `proyecto.lof'.
 
 
 
-[3]
+[9]
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 29.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-[4
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+[10
 
-]
-No file proyecto.lot.
+] (proyecto.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
 \tf@lot=\write6
 \openout6 = `proyecto.lot'.
 
 
 
-[5]
-\openout2 = `projectCharter.aux'.
+[11]
 
- (projectCharter.tex
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+[12
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 11.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-[6
+] (capitulo_resumen.tex
 
+[13])
 
-]
-LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 17.
-LaTeX Font Info:    Trying to load font information for TS1+txss on input line 
-35.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txs
-s.fd
-File: ts1txss.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `TS1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 35.
-)
-
-<theme/headerInp.png, id=52, 1204.5pt x 200.75pt>
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 31.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-[7 <./theme/headerInp.png>]
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 33.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-[8
-
-
-
-]
-\openout2 = `1introduccion.aux'.
-
- (1introduccion.tex
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+[14] (1introduccion.tex
 Cap\'{\i }tulo 1.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <10> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 9.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <12> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 9.
-LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 13.
-
-LaTeX Warning: Reference `cap:reqUsr' on page 1 undefined on input line 30.
+(Font)              scaled to size 11.39996pt on input line 7.
 
 
-LaTeX Warning: Reference `cap:reqSist' on page 1 undefined on input line 32.
-
-)
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \include{1introduccion}
-                            
-<theme/pleca.png, id=66, 1638.12pt x 231.264pt>
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 39.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
- [1
-
-
- <./theme/pleca.png>]
-\openout2 = `2ModeloDelAlcance.aux'.
-
- (2ModeloDelAlcance.tex
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 4.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4 \chapter
-            {Modelo del alcance}
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 4.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
- [2
-
-
+[1
 
 
 ]
-Cap\'{\i }tulo 2.
-LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 18.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 37.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 37.
+
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+[2]
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 54.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+Overfull \hbox (79.26973pt too wide) in paragraph at lines 54--55
+\OT1/txss/m/n/12 to \OT1/txtt/m/n/12 snake[]case \OT1/txss/m/n/12 seg[]un con-ven-cio-nes Python (ejem-plo: \OT1/txtt/m/n/12 data[]collector.py\OT1/txss/m/n/12 , \OT1/txtt/m/n/12 simplified[]analyzer.py\OT1/txss/m/n/12 ). 
+ []
 
 
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 52.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[3]
-<images/organigramaEm.png, id=90, 525.6438pt x 250.536pt>
-File: images/organigramaEm.png Graphic file (type png)
-<use images/organigramaEm.png>
-Package pdftex.def Info: images/organigramaEm.png  used on input line 124.
-(pdftex.def)             Requested size: 400.38872pt x 190.84131pt.
+Overfull \hbox (7.60156pt too wide) in paragraph at lines 73--74
+[]\OT1/txss/b/n/12 C[]odi-go Fuen-te: \OT1/txss/m/n/12 Los frag-men-tos de c[]odi-go se pre-sen-tan uti-li-zan-do el en-torno \OT1/txtt/m/n/12 lstlisting
+ []
 
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 136.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 136.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
+
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+[3]) (2ModeloDelAlcance.tex
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
 [4]
-<images/mapa.jpg, id=103, 640.3925pt x 480.79625pt>
-File: images/mapa.jpg Graphic file (type jpg)
-<use images/mapa.jpg>
-Package pdftex.def Info: images/mapa.jpg  used on input line 140.
-(pdftex.def)             Requested size: 400.38872pt x 300.60695pt.
+Cap\'{\i }tulo 2.
+
+
+[5
+
+]
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 35.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 35.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 35.
+
+Overfull \hbox (2.80115pt too wide) in alignment at lines 38--38
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 38--38
+[]|\OT1/txss/m/n/12 Dispersi[]on de in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\OT1/txss/m/n/12 Imposibilidad
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\OT1/txss/m/n/12 de an[]ali-sis de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\OT1/txss/m/n/12 P-
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 52--52
+[]|\OT1/txss/m/n/12 Invisibilizaci[]on de
+ []
+
+
+Overfull \hbox (2.80115pt too wide) in alignment at lines 38--53
+ [] [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+[6]
+
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+[7]
+
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+[8]
+
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+[9]
+
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+[10]
+
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+[11]
+
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+[12]
+<images/organigrama.png, id=517, 713.5458pt x 330.033pt>
+File: images/organigrama.png Graphic file (type png)
+<use images/organigrama.png>
+Package pdftex.def Info: images/organigrama.png  used on input line 179.
+(pdftex.def)             Requested size: 424.82523pt x 196.49544pt.
+
+
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+[13 <./images/organigrama.png>]
+<images/mapaProc.png, id=524, 825.83531pt x 546.54187pt>
+File: images/mapaProc.png Graphic file (type png)
+<use images/mapaProc.png>
+Package pdftex.def Info: images/mapaProc.png  used on input line 219.
+(pdftex.def)             Requested size: 448.42822pt x 296.77943pt.
+
+
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+[14]
+
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+[15 <./images/mapaProc.png>]
+Overfull \hbox (0.31787pt too wide) in paragraph at lines 243--244
+[]\OT1/txss/m/n/12 Proceso de ge-ne-ra-ci[]on de do-cu-men-tos pa-
+ []
+
+
+Overfull \hbox (19.8891pt too wide) in paragraph at lines 247--248
+\OT1/txss/m/n/12 dad de ca-sos pa-ra evi-tar con-teo m[]ulti-ple. \OT1/txss/b/n/12 AS-IS: \OT1/txss/m/n/12 Com-pa-ra-ci[]on ma-nual memoria-dependiente
+ []
+
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 157.
+(Font)              scaled to size 9.49997pt on input line 254.
 
-Overfull \hbox (5.88156pt too wide) in paragraph at lines 160--160
-[]|\OT1/txss/m/n/10 Iter.[]| 
+
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+[16]
+Overfull \hbox (9.62944pt too wide) in paragraph at lines 257--257
+[]|\OT1/txss/m/n/12 Iter.[]| 
  []
 
 
-Overfull \hbox (2.03964pt too wide) in paragraph at lines 160--160
-[]|\OT1/txss/b/n/10 TODO[]| 
+Overfull \hbox (1.04076pt too wide) in alignment at lines 257--257
+ [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--178
-
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 257--257
+[]|\OT1/txss/b/n/12 DONE[]| 
  []
 
 
+Underfull \hbox (badness 5607) in paragraph at lines 259--259
+[]|\OT1/txss/m/n/12 Integraci[]on con
+ []
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 178.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 178.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[5 <./images/organigramaEm.png>]
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 178.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 178.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[6 <./images/mapa.jpg>]
-<images/arquitectura.png, id=121, 699.5736pt x 609.9588pt>
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
+\OT1/txss/m/n/12 Goo-gle News
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 259--259
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 261--261
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\OT1/txss/m/n/12 Detecci[]on au-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+\OT1/txss/m/n/12 tom[]ati-ca de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 263--263
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]|\OT1/txss/m/n/12 Detecci[]on de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+\OT1/txss/m/n/12 men-cio-nes de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 265--265
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+\OT1/txss/m/n/12 ma-li-za-ci[]on de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 267--267
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]|\OT1/txss/m/n/12 Vectorizaci[]on
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 269--269
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]|\OT1/txss/m/n/12 Clustering de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+\OT1/txss/m/n/12 no-ti-cias si-mi-la-
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 271--271
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
+[]|\OT1/txss/m/n/12 Modelado de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 273--273
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 275--275
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 277--277
+\OT1/txss/m/n/12 sul-tar to-das las
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 277--277
+\OT1/txtt/m/n/12 /api/noticias \OT1/txss/m/n/12 que re-tor-ne lis-ta com-ple-ta de
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 277--277
+\OT1/txss/m/n/12 fe-cha, me-dio, URL, clus-ter, men-cio-na[]nna) en
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 277--277
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 279--279
+\OT1/txtt/m/n/12 /api/search?q=<query> \OT1/txss/m/n/12 que re-tor-ne no-ti-cias
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 279--279
+\OT1/txss/m/n/12 cu-yo con-te-ni-do con-ten-ga las pa-la-bras bus-ca-
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 279--279
+\OT1/txss/m/n/12 das, per-mi-tien-do b[]usque-das per-so-na-li-za-das de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 279--279
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\OT1/txss/m/n/12 te-ner m[]etri-cas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 281--281
+\OT1/txtt/m/n/12 /api/metrics \OT1/txss/m/n/12 que re-tor-ne es-tad[]^^Psti-cas cla-ve:
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 281--281
+\OT1/txss/m/n/12 to-tal de no-ti-cias, por-cen-ta-je con men-ci[]on de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 281--281
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 283--283
+\OT1/txtt/m/n/12 /api/clusters \OT1/txss/m/n/12 que re-tor-ne lis-ta de clus-ters
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 283--283
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 285--285
+\OT1/txtt/m/n/12 /api/recent?days=N \OT1/txss/m/n/12 que re-tor-ne no-ti-cias de
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 285--285
+\OT1/txss/m/n/12 los []ulti-mos N d[]^^Pas, per-mi-tien-do con-sul-tas de
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 285--285
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be ex-po-ner end-point \OT1/txtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 287--287
+\OT1/txtt/m/n/12 /api/health \OT1/txss/m/n/12 que re-tor-ne es-ta-do del sis-te-ma
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 287--287
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 289--289
+[]|\OT1/txss/m/n/12 Dashboard web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+\OT1/txss/m/n/12 - Vi-sua-li-za-ci[]on
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 289--289
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 291--291
+[]|\OT1/txss/m/n/12 Dashboard web
+ []
+
+
+Overfull \hbox (13.76604pt too wide) in paragraph at lines 291--291
+[]|\OT1/txss/b/n/12 DOING[]| 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 293--293
+[]|\OT1/txss/m/n/12 Dashboard web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\OT1/txss/m/n/12 - Vi-sua-li-za-ci[]on
+ []
+
+
+Overfull \hbox (13.76604pt too wide) in paragraph at lines 293--293
+[]|\OT1/txss/b/n/12 DOING[]| 
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 295--295
+[]|\OT1/txss/m/n/12 Dashboard web
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 295--295
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]|\OT1/txss/m/n/12 Almacenamiento
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 297--297
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/txss/m/n/12 Arquitectura
+ []
+
+
+Overfull \hbox (9.33147pt too wide) in paragraph at lines 299--299
+[]|\OT1/txss/b/n/12 DONE[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+[]|\OT1/txss/m/n/12 Configuraci[]on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+\OT1/txss/m/n/12 de fuen-tes
+ []
+
+
+Overfull \hbox (8.87546pt too wide) in paragraph at lines 301--301
+[]|\OT1/txss/b/n/12 TODO[]| 
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 303--303
+[]|\OT1/txss/m/n/12 Logs de ope-ra-
+ []
+
+
+Overfull \hbox (13.76604pt too wide) in paragraph at lines 303--303
+[]|\OT1/txss/b/n/12 DOING[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]|\OT1/txss/m/n/12 Exportaci[]on de
+ []
+
+
+Overfull \hbox (8.87546pt too wide) in paragraph at lines 305--305
+[]|\OT1/txss/b/n/12 TODO[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
+[]|\OT1/txss/m/n/12 Reportes au-to-
+ []
+
+
+Overfull \hbox (8.87546pt too wide) in paragraph at lines 307--307
+[]|\OT1/txss/b/n/12 TODO[]| 
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 309--309
+[]|\OT1/txss/m/n/12 El sis-te-ma de-be en-viar no-ti-fi-ca-cio-nes (emai-l/-
+ []
+
+
+Overfull \hbox (8.87546pt too wide) in paragraph at lines 309--309
+[]|\OT1/txss/b/n/12 TODO[]| 
+ []
+
+
+Overfull \hbox (1.04076pt too wide) in alignment at lines 257--310
+ [] [] [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+[17]
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+ [18]
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+ [19]
+<images/arquitectura.png, id=556, 699.5736pt x 609.9588pt>
 File: images/arquitectura.png Graphic file (type png)
 <use images/arquitectura.png>
-Package pdftex.def Info: images/arquitectura.png  used on input line 182.
-(pdftex.def)             Requested size: 300.29344pt x 261.82112pt.
+Package pdftex.def Info: images/arquitectura.png  used on input line 320.
+(pdftex.def)             Requested size: 401.22942pt x 349.8301pt.
 
 
-LaTeX Warning: Reference `fig:arquitectura' on page 7 undefined on input line 1
-88.
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+[20]
 
-)
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+[21 <./images/arquitectura.png>]
+Overfull \hbox (45.12479pt too wide) in paragraph at lines 346--347
+[]\OT1/txss/b/n/12 Recolecci[]on: \OT1/txtt/m/n/12 feedparser \OT1/txss/m/n/12 pa-ra par-sing RS-S/A-tom, \OT1/txtt/m/n/12 requests \OT1/txss/m/n/12 pa-ra HTTP, \OT1/txtt/m/n/12 beautifulsoup4
+ []
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 42.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 42.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[7 <./images/arquitectura.png>]
-\openout2 = `3ModeloDelNegocio.aux'.
 
- (3ModeloDelNegocio.tex
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 4.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 4.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[8
+Overfull \hbox (25.51405pt too wide) in paragraph at lines 356--357
+[]\OT1/txss/b/n/12 Contenedor 1 - An[]ali-sis: \OT1/txss/m/n/12 Python + li-brer[]^^Pas PLN + cron-tab, eje-cu-ta \OT1/txtt/m/n/12 data[]collector.py
+ []
 
 
 
+LaTeX Info: Redefining \. on input line 388.
+LaTeX Info: Redefining \% on input line 388.
+LaTeX Info: Redefining \. on input line 388.
+LaTeX Info: Redefining \% on input line 388.
+[22]) (3ModeloDelNegocio.tex
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[23]
+
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[24
 
 ]
 Cap\'{\i }tulo 3.
-<cdt/images/actorRule.png, id=132, 1401.0744pt x 130.086pt>
+<cdt/images/actorRule.png, id=581, 1401.0744pt x 130.086pt>
 File: cdt/images/actorRule.png Graphic file (type png)
 <use cdt/images/actorRule.png>
 Package pdftex.def Info: cdt/images/actorRule.png  used on input line 17.
-(pdftex.def)             Requested size: 500.484pt x 46.46767pt.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
 
 
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 38.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[9 <./cdt/images/actorRule.png>]
+[25 <./cdt/images/actorRule.png>]
 
-LaTeX Warning: Reference `fig:modeloDeDominio' on page 10 undefined on input li
-ne 72.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+[26]
+File: cdt/images/actorRule.png Graphic file (type png)
+<use cdt/images/actorRule.png>
+Package pdftex.def Info: cdt/images/actorRule.png  used on input line 56.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
 
-<images/modeloDelDominioDelProblema.png, id=151, 1762.4244pt x 1340.8494pt>
-File: images/modeloDelDominioDelProblema.png Graphic file (type png)
-<use images/modeloDelDominioDelProblema.png>
-Package pdftex.def Info: images/modeloDelDominioDelProblema.png  used on input 
-line 76.
-(pdftex.def)             Requested size: 1762.42012pt x 1340.84613pt.
 
-LaTeX Warning: Float too large for page by 63.71478pt on input line 80.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+[27]
+File: cdt/images/actorRule.png Graphic file (type png)
+<use cdt/images/actorRule.png>
+Package pdftex.def Info: cdt/images/actorRule.png  used on input line 95.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
 
-<cdt/images/classRule.png, id=152, 1930.5726pt x 130.086pt>
-File: cdt/images/classRule.png Graphic file (type png)
-<use cdt/images/classRule.png>
-Package pdftex.def Info: cdt/images/classRule.png  used on input line 82.
-(pdftex.def)             Requested size: 500.484pt x 33.7223pt.
 
-Overfull \hbox (3.92613pt too wide) in paragraph at lines 82--82
-[]|\OT1/txss/m/n/10 Requerido| 
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+[28]
+File: cdt/images/actorRule.png Graphic file (type png)
+<use cdt/images/actorRule.png>
+Package pdftex.def Info: cdt/images/actorRule.png  used on input line 133.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
+
+
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+[29]
+File: cdt/images/actorRule.png Graphic file (type png)
+<use cdt/images/actorRule.png>
+Package pdftex.def Info: cdt/images/actorRule.png  used on input line 171.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
+
+
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
+[30]
+
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+[31]
+File: cdt/images/actorRule.png Graphic file (type png)
+<use cdt/images/actorRule.png>
+Package pdftex.def Info: cdt/images/actorRule.png  used on input line 207.
+(pdftex.def)             Requested size: 472.03123pt x 43.8257pt.
+
+Overfull \hbox (4.0227pt too wide) in paragraph at lines 210--211
+[]\OT1/txss/m/n/12 Monitorear logs del sis-te-ma dia-ria-men-te pa-ra de-tec-tar erro-res de re-co-lec-ci[]on, ca[]^^Pdas
  []
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 103.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 103.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[10 <./cdt/images/classRule.png>]
+
+Overfull \hbox (18.66252pt too wide) in paragraph at lines 222--223
+[]\OT1/txss/m/n/12 Escolaridad: Li-cen-cia-tu-ra o In-ge-nier[]^^Pa en Cien-cias Compu-tacio-na-les, Sis-te-mas Compu-
+ []
+
+
+Overfull \hbox (5.095pt too wide) in paragraph at lines 225--226
+\OT1/txss/m/n/12 learn, web scra-ping res-pon-sa-ble, ba-ses de da-tos re-la-cio-na-les (Post-greSQ-L/MySQL),
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 226.
+LaTeX Info: Redefining \% on input line 226.
+LaTeX Info: Redefining \. on input line 226.
+LaTeX Info: Redefining \% on input line 226.
+[32]
+
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+[33]
+Overfull \hbox (0.53447pt too wide) in paragraph at lines 267--268
+[][][]\OT1/txss/m/n/12 Noticia[][] in-co-rrec-ta-men-te cla-si-fi-ca-da co-mo re-le-van-te por el [][]de-tec-tor dual-etapa[][].
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+[34]
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 291.
+
+
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
+[35]
+LaTeX Font Info:    Trying to load font information for OMS+txss on input line 299.
+LaTeX Font Info:    No file OMStxss.fd. on input line 299.
+
+
+LaTeX Font Warning: Font shape `OMS/txss/m/n' undefined
+(Font)              using `OMS/txsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 299.
+
+<images/modeloDelDominioDelProblema.png, id=711, 1762.4244pt x 1340.8494pt>
+File: images/modeloDelDominioDelProblema.png Graphic file (type png)
+<use images/modeloDelDominioDelProblema.png>
+Package pdftex.def Info: images/modeloDelDominioDelProblema.png  used on input line 316.
+(pdftex.def)             Requested size: 448.42822pt x 341.1653pt.
+
+Overfull \hbox (1.10365pt too wide) in paragraph at lines 324--325
+[]\OT1/txss/b/n/12 Entidades prin-ci-pa-les: \OT1/txss/m/n/12 No-ti-cia, Me-dio, Ca-so, Clus-ter, Men-cionN-NA, T[]opi-co, Fuen-teRSS 
+ []
+
+
+
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+[36]
+
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
+[37 <./images/modeloDelDominioDelProblema.png>]
+<cdt/images/classRule.png, id=727, 1930.5726pt x 130.086pt>
 File: cdt/images/classRule.png Graphic file (type png)
 <use cdt/images/classRule.png>
-Package pdftex.def Info: cdt/images/classRule.png  used on input line 106.
-(pdftex.def)             Requested size: 500.484pt x 33.7223pt.
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 336.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
 
-Overfull \hbox (3.92613pt too wide) in paragraph at lines 106--106
-[]|\OT1/txss/m/n/10 Requerido| 
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 336--336
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 339--339
+[]|\OT1/txss/m/sl/12 Cadena Lar-
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 343--343
+[]|\OT1/txss/b/n/12 Fecha de pu-bli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]|\OT1/txss/m/n/12 Versi[]on pre-pro-ce-sa-da del con-te-ni-do:
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 347--347
+\OT1/txss/m/n/12 min[]uscu-las, sin stop-words, le-ma-ti-za-do,
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 351--351
+[]|\OT1/txss/m/n/12 Bandera in-di-can-do si el de-tec-tor dual-
+ []
+
+LaTeX Info: Redefining \. on input line 363.
+LaTeX Info: Redefining \% on input line 363.
+LaTeX Info: Redefining \. on input line 363.
+LaTeX Info: Redefining \% on input line 363.
+[38 <./cdt/images/classRule.png>]
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 366.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 366--366
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 371--371
+[]|\OT1/txss/m/n/12 Direcci[]on web ra[]^^Pz del si-tio del me-dio
+ []
+
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+[39]
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 386.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 386--386
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 387--387
+[]|\OT1/txss/m/n/12 Identificador num[]eri-co []uni-co del clus-ter
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 391--391
+\OT1/txss/m/n/12 ti-cias del clus-ter, re-pre-sen-ta con-te-ni-do
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 397--397
+[]|\OT1/txss/b/n/12 Fecha m[]as tem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+[]|\OT1/txss/b/n/12 Fecha m[]as re-
+ []
+
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 408.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+
+LaTeX Info: Redefining \. on input line 408.
+LaTeX Info: Redefining \% on input line 408.
+LaTeX Info: Redefining \. on input line 408.
+LaTeX Info: Redefining \% on input line 408.
+[40]
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 408--408
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 411--411
+[]|\OT1/txss/m/sl/12 Cadena Lar-
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 415--415
+[]|\OT1/txss/m/n/12 Cantidad de NNA men-cio-na-dos si es
+ []
+
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 425.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 425--425
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 426--426
+[]|\OT1/txss/m/n/12 Identificador num[]eri-co del t[]opi-co (0 a
+ []
+
+
+Underfull \hbox (badness 5504) in paragraph at lines 428--428
+[]|\OT1/txss/m/sl/12 Lista de tu-
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 434--434
+[]|\OT1/txss/b/n/12 Noticias aso-cia-
+ []
+
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
+[41]
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 440.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 440--440
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 443--443
+[]|\OT1/txss/m/n/12 Nombre de la v[]^^Pcti-ma si fue di-vul-ga-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 443--443
+\OT1/txss/m/n/12 do p[]ubli-ca-men-te (res-pe-tan-do pri-va-ci-dad
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 447--447
+[]|\OT1/txss/b/n/12 Entidad fe-de-ra-ti-
+ []
+
+LaTeX Info: Redefining \. on input line 461.
+LaTeX Info: Redefining \% on input line 461.
+LaTeX Info: Redefining \. on input line 461.
+LaTeX Info: Redefining \% on input line 461.
+[42]
+File: cdt/images/classRule.png Graphic file (type png)
+<use cdt/images/classRule.png>
+Package pdftex.def Info: cdt/images/classRule.png  used on input line 464.
+(pdftex.def)             Requested size: 472.03123pt x 31.80484pt.
+
+Overfull \hbox (14.99557pt too wide) in paragraph at lines 464--464
+[]|\OT1/txss/m/n/12 Requerido| 
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 467--467
+[]|\OT1/txss/m/n/12 Direcci[]on com-ple-ta del feed RS-S/A-tom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--469
+[]|\OT1/txss/b/n/12 Frecuencia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
+[]|[]\OT1/txss/b/n/12 Ulti-ma con-sul-ta
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 473--473
+[]|\OT1/txss/m/sl/12 Cadena Lar-
  []
 
 (3-1-reglas.tex
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 12.
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\u
-fontawesomefree2.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 12.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\u
-fontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on i
-nput line 12.
-
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\u
-fontawesomefree0.fd)
-Overfull \hbox (2.5624pt too wide) in paragraph at lines 12--12
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+[43]
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 12.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree2.fd)
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 12.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree1.fd)
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 12.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree0.fd)
+Overfull \hbox (4.5543pt too wide) in paragraph at lines 12--12
 [] 
  []
 
-
-
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 26.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 26.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[11{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fonta
-wesome5/fa5free2.enc}{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fon
-ts/enc/dvips/fontawesome5/fa5free1.enc}{C:/Users/Hector.Morales/AppData/Local/P
-rograms/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}]
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 26.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 26.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[12 <./images/modeloDelDominioDelProblema.png>]) (3-2-estados.tex
-
-LaTeX Warning: Reference `fig:edos-prestamo' on page 13 undefined on input line
- 8.
-
-<images/edoPrestamo.png, id=218, 408.52625pt x 226.8475pt>
+) (3-2-estados.tex
+<images/edoPrestamo.png, id=852, 408.52625pt x 226.8475pt>
 File: images/edoPrestamo.png Graphic file (type png)
 <use images/edoPrestamo.png>
 Package pdftex.def Info: images/edoPrestamo.png  used on input line 12.
-(pdftex.def)             Requested size: 350.33727pt x 194.54506pt.
-))
+(pdftex.def)             Requested size: 330.42041pt x 183.48586pt.
+)) (4ModeloDinamico.tex
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 45.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 45.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[13 <./images/edoPrestamo.png>]
-\openout2 = `4ModeloDinamico.aux'.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[44{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}]
 
- (4ModeloDinamico.tex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[45 <./images/edoPrestamo.png>]
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 4.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 4.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[14
-
-
-
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
+[46
 
 ]
 Cap\'{\i }tulo 4.
-
-LaTeX Warning: Reference `fig:casosDeUso' on page 15 undefined on input line 9.
-
-
-
-LaTeX Warning: Reference `fig:casosDeUsoDetalle' on page 15 undefined on input 
-line 9.
-
-<images/casosDeUso.png, id=235, 726.5544pt x 370.0224pt>
+<images/casosDeUso.png, id=877, 726.5544pt x 370.0224pt>
 File: images/casosDeUso.png Graphic file (type png)
 <use images/casosDeUso.png>
 Package pdftex.def Info: images/casosDeUso.png  used on input line 13.
-(pdftex.def)             Requested size: 400.38872pt x 203.9138pt.
-<images/casosDeUsoDetalle.png, id=236, 1653.0558pt x 995.3988pt>
+(pdftex.def)             Requested size: 377.62642pt x 192.3224pt.
+<images/casosDeUsoDetalle.png, id=878, 1653.0558pt x 995.3988pt>
 File: images/casosDeUsoDetalle.png Graphic file (type png)
 <use images/casosDeUsoDetalle.png>
 Package pdftex.def Info: images/casosDeUsoDetalle.png  used on input line 21.
 (pdftex.def)             Requested size: 1653.05179pt x 995.39638pt.
-
-LaTeX Warning: Float too large for page by 20.5961pt on input line 25.
-
 (cu/cu-template-corto.tex
 
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 10.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[15 <./images/casosDeUso.png>]
+[47 <./images/casosDeUso.png>]
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 10.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 10.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[16 <./images/casosDeUsoDetalle.png>]
-
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 10.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 10.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[17]
-<cdt/images/cuRule.png, id=256, 926.46124pt x 57.21375pt>
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+[48 <./images/casosDeUsoDetalle.png>]
+<cdt/images/cuRule.png, id=890, 926.46124pt x 57.21375pt>
 File: cdt/images/cuRule.png Graphic file (type png)
 <use cdt/images/cuRule.png>
 Package pdftex.def Info: cdt/images/cuRule.png  used on input line 10.
-(pdftex.def)             Requested size: 550.53545pt x 33.9985pt.
+(pdftex.def)             Requested size: 519.23723pt x 32.06566pt.
 
-Overfull \hbox (50.05145pt too wide) in paragraph at lines 10--10
+Overfull \hbox (47.206pt too wide) in paragraph at lines 10--10
 [][] 
  []
 
-<cdt/images/iu.png, id=261, 61.22874pt x 55.20625pt>
+<cdt/images/iu.png, id=895, 61.22874pt x 55.20625pt>
 File: cdt/images/iu.png Graphic file (type png)
 <use cdt/images/iu.png>
 Package pdftex.def Info: cdt/images/iu.png  used on input line 45.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 
-LaTeX Warning: Reference `UC1.etiqueta' on page 18 undefined on input line 68.
+Overfull \hbox (8.44714pt too wide) in paragraph at lines 51--51
+[]|\OT1/txss/b/n/12 Precondiciones:| 
+ []
+
+
+Overfull \hbox (14.31813pt too wide) in paragraph at lines 59--59
+[]|\OT1/txss/b/n/12 Postcondiciones:| 
+ []
+
+
+LaTeX Warning: Reference `UC1.etiqueta' on page 49 undefined on input line 68.
+
+
+Overfull \hbox (5.17532pt too wide) in paragraph at lines 82--82
+[]|\OT1/txss/b/n/12 Observaciones:| 
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 86--86
 
  []
 
-<cdt/images/actor.png, id=263, 96.36pt x 74.2775pt>
+
+
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+[49 <./cdt/images/cuRule.png> <./cdt/images/iu.png>]
+<cdt/images/actor.png, id=909, 96.36pt x 74.2775pt>
 File: cdt/images/actor.png Graphic file (type png)
 <use cdt/images/actor.png>
 Package pdftex.def Info: cdt/images/actor.png  used on input line 91.
 (pdftex.def)             Requested size: 14.26958pt x 11.0pt.
-<cdt/images/usecase.png, id=264, 91.34125pt x 61.22874pt>
+<cdt/images/usecase.png, id=910, 91.34125pt x 61.22874pt>
 File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 91.
@@ -1473,18 +2041,6 @@ File: cdt/images/iu.png Graphic file (type png)
 <use cdt/images/iu.png>
 Package pdftex.def Info: cdt/images/iu.png  used on input line 94.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 96.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 96.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[18 <./cdt/images/cuRule.png> <./cdt/images/iu.png> <./cdt/images/actor.png> <.
-/cdt/images/usecase.png>]
 File: cdt/images/actor.png Graphic file (type png)
 <use cdt/images/actor.png>
 Package pdftex.def Info: cdt/images/actor.png  used on input line 96.
@@ -1497,15 +2053,21 @@ File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 100.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
-nput line 100.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on input line 100.
+ (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree3.fd)
+Overfull \hbox (5.04184pt too wide) in paragraph at lines 100--102
+[][] \OT1/txss/m/n/12 Bus-ca los da-tos del usua-rio iden-ti-fi-ca-do por el nom-bre de usua-rio in-tro-du-ci-do [][]\U/fontawesomefree3/solid/n/12 q \OT1/txss/m/n/12 E1 No
+ []
 
-(C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\u
-fontawesomefree3.fd)
 File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 102.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
+
+Overfull \hbox (6.68947pt too wide) in paragraph at lines 102--104
+[][] \OT1/txss/m/n/12 Ve-ri-fi-ca que el usua-rio es-pe-ci-fi-ca-do no est[]e inac-ti-vo [][]\U/fontawesomefree3/solid/n/12 q \OT1/txss/m/n/12 E2 Usua-rio inac-ti-vo[][] $\OT1/txr/m/n/12 [$[][]\OT1/txss/m/n/12 Trayectoria
+ []
+
 File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 104.
@@ -1519,43 +2081,27 @@ File: cdt/images/iu.png Graphic file (type png)
 Package pdftex.def Info: cdt/images/iu.png  used on input line 108.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 114.
+(Font)              scaled to size 10.40245pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 114.
+(Font)              scaled to size 10.40245pt on input line 114.
 File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 115.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 
-
-LaTeX Warning: Reference `UCX.introduceDatos' on page 19 undefined on input lin
-e 119.
+LaTeX Warning: Reference `CUX.etiqueta' on page 50 undefined on input line 137.
 
 
-LaTeX Warning: Reference `CUX.etiqueta' on page 19 undefined on input line 137.
-
-
-
-LaTeX Warning: Reference `CUX.etiqueta' on page 19 undefined on input line 137.
-
+LaTeX Warning: Reference `CUX.etiqueta' on page 50 undefined on input line 137.
 
 ) (cu/cu-template-largo.tex
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 10.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 10.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[19{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fonta
-wesome5/fa5free3.enc} <C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/te
-x/latex/keystroke/keystroke_left.pdf> <C:/Users/Hector.Morales/AppData/Local/Pr
-ograms/MiKTeX/tex/latex/keystroke/keystroke_middle.pdf> <C:/Users/Hector.Morale
-s/AppData/Local/Programs/MiKTeX/tex/latex/keystroke/keystroke_right.pdf>]
-pdfTeX warning (ext4): destination with the same identifier (name{CUX}) has bee
-n already used, duplicate ignored
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+[50{C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free3.enc} <./cdt/images/actor.png> <./cdt/images/usecase.png> <C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/tex/latex/keystroke/keystroke_left.pdf> <C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/tex/latex/keystroke/keystroke_middle.pdf> <C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/tex/latex/keystroke/keystroke_right.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{CUX}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.10 }
@@ -1563,9 +2109,9 @@ l.10 }
 File: cdt/images/cuRule.png Graphic file (type png)
 <use cdt/images/cuRule.png>
 Package pdftex.def Info: cdt/images/cuRule.png  used on input line 10.
-(pdftex.def)             Requested size: 550.53545pt x 33.9985pt.
+(pdftex.def)             Requested size: 519.23723pt x 32.06566pt.
 
-Overfull \hbox (50.05145pt too wide) in paragraph at lines 10--10
+Overfull \hbox (47.206pt too wide) in paragraph at lines 10--10
 [] 
  []
 
@@ -1574,81 +2120,96 @@ File: cdt/images/iu.png Graphic file (type png)
 Package pdftex.def Info: cdt/images/iu.png  used on input line 82.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]|\OT1/txss/b/n/10 Condici[]on de
+Overfull \hbox (8.44714pt too wide) in paragraph at lines 96--96
+[]|\OT1/txss/b/n/12 Precondiciones:| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
-[]|\OT1/txss/b/n/10 Efectos co-la-te-ra-
+Underfull \hbox (badness 7649) in paragraph at lines 103--103
+[]|\OT1/txss/b/n/12 Condici[]on de
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has 
-been already used, duplicate ignored
+Overfull \hbox (14.31813pt too wide) in paragraph at lines 117--117
+[]|\OT1/txss/b/n/12 Postcondiciones:| 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.128 	}
         
 
-LaTeX Warning: Reference `UC1.etiqueta' on page 20 undefined on input line 128.
+LaTeX Warning: Reference `UC1.etiqueta' on page 51 undefined on input line 128.
 
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.128 	}
         
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.140 	}
-        
-
-LaTeX Warning: Reference `UC1.etiqueta' on page 20 undefined on input line 140.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.140 	}
-        
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
-[]|\OT1/txss/b/n/10 Consideraciones
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[]|\OT1/txss/b/n/12 Casos de
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 	}
+        
+
+LaTeX Warning: Reference `UC1.etiqueta' on page 51 undefined on input line 140.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 	}
+        
+Overfull \hbox (11.61633pt too wide) in paragraph at lines 146--146
+[]|\OT1/txss/b/n/12 Consideraciones
+ []
+
+
+Overfull \hbox (0.832pt too wide) in paragraph at lines 152--152
+[]|\OT1/txss/b/n/12 Impedimentos:| 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.152 	}
         \UCitem{Preguntas}{
 
-LaTeX Warning: Reference `UC1.etiqueta' on page 20 undefined on input line 152.
+LaTeX Warning: Reference `UC1.etiqueta' on page 51 undefined on input line 152.
 
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{CUX.E2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.152 	}
         \UCitem{Preguntas}{
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 168.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 168.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
- [20]
+Overfull \hbox (5.17532pt too wide) in paragraph at lines 167--167
+[]|\OT1/txss/b/n/12 Observaciones:| 
+ []
+
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 171--171
 
  []
@@ -1693,83 +2254,54 @@ File: cdt/images/iu.png Graphic file (type png)
 <use cdt/images/iu.png>
 Package pdftex.def Info: cdt/images/iu.png  used on input line 192.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-
-
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 193.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 193.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[21]
 File: cdt/images/usecase.png Graphic file (type png)
 <use cdt/images/usecase.png>
 Package pdftex.def Info: cdt/images/usecase.png  used on input line 199.
 (pdftex.def)             Requested size: 16.40865pt x 11.0pt.
 
-
-LaTeX Warning: Reference `UCX.introduceDatos' on page 22 undefined on input lin
-e 203.
+LaTeX Warning: Reference `CUX.etiqueta' on page 53 undefined on input line 221.
 
 
-LaTeX Warning: Reference `CUX.etiqueta' on page 22 undefined on input line 221.
+LaTeX Warning: Reference `CUX.etiqueta' on page 53 undefined on input line 221.
 
+)) (5ModeloDeInteraccion.tex
 
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+[53]
 
-LaTeX Warning: Reference `CUX.etiqueta' on page 22 undefined on input line 221.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+[54
 
-
-))
-
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 48.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 48.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[22]
-\openout2 = `5ModeloDeInteraccion.aux'.
-
- (5ModeloDeInteraccion.tex
+]
 Cap\'{\i }tulo 5.
-
-LaTeX Warning: Reference `fig:mapa' on page 23 undefined on input line 16.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
+<images/mapa.jpg, id=1004, 640.3925pt x 480.79625pt>
 File: images/mapa.jpg Graphic file (type jpg)
 <use images/mapa.jpg>
 Package pdftex.def Info: images/mapa.jpg  used on input line 20.
-(pdftex.def)             Requested size: 350.33727pt x 263.03017pt.
+(pdftex.def)             Requested size: 330.42041pt x 248.07867pt.
 (iu/iu-template.tex
+
+[55 <./images/mapa.jpg>]
 File: cdt/images/iu.png Graphic file (type png)
 <use cdt/images/iu.png>
 Package pdftex.def Info: cdt/images/iu.png  used on input line 9.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
-<images/Login.png, id=373, 354.32375pt x 252.945pt>
+<images/Login.png, id=1010, 354.32375pt x 252.945pt>
 File: images/Login.png Graphic file (type png)
 <use images/Login.png>
 Package pdftex.def Info: images/Login.png  used on input line 11.
-(pdftex.def)             Requested size: 350.33727pt x 250.10368pt.
-
-
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 20.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[23
-
-
-
-
-]
+(pdftex.def)             Requested size: 330.42041pt x 235.88483pt.
 File: cdt/images/iu.png Graphic file (type png)
 <use cdt/images/iu.png>
 Package pdftex.def Info: cdt/images/iu.png  used on input line 34.
@@ -1780,188 +2312,165 @@ Package pdftex.def Info: cdt/images/iu.png  used on input line 35.
 (pdftex.def)             Requested size: 11.09076pt x 10.0pt.
 ) (5-1-Mensajes.tex
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 9.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 9.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[24]
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+[56 <./images/Login.png>]
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 24.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 24.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[25 <./images/Login.png>]
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+[57]
 
-File: theme/headerPar.png Graphic file (type png)
-<use theme/headerPar.png>
-Package pdftex.def Info: theme/headerPar.png  used on input line 99.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 99.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[26]))
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+[58])) (proyecto.bbl
 
-File: theme/headerInp.png Graphic file (type png)
-<use theme/headerInp.png>
-Package pdftex.def Info: theme/headerInp.png  used on input line 51.
-(pdftex.def)             Requested size: 210.00035pt x 35.0pt.
-File: theme/pleca.png Graphic file (type png)
-<use theme/pleca.png>
-Package pdftex.def Info: theme/pleca.png  used on input line 51.
-(pdftex.def)             Requested size: 614.2935pt x 86.72379pt.
-[27] (proyecto.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- (projectCharter.aux) (1introduccion.aux)
-(2ModeloDelAlcance.aux) (3ModeloDelNegocio.aux) (4ModeloDinamico.aux)
-(5ModeloDeInteraccion.aux))
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[59]
+
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+[60
+
+]
+
+[61])
+
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+[62]
+Ap\'{e}ndice A.
+(anexos.tex
+
+[63
+
+]
+
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+[64] (C:\Users\Hector.Morales\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 62.
+
+
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+[65])
+
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+[66] (proyecto.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `proyecto.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `proyecto.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  3D1151AABAD61047DCFD32D36D141F3B;8945.
+Package rerunfilecheck Info: File `proyecto.out' has not changed.
+(rerunfilecheck)             Checksum: 75365C8A2831690C155CBA317F7F99A2;12450.
  ) 
 Here is how much of TeX's memory you used:
- 20196 strings out of 468080
- 347040 string characters out of 5421415
- 752869 words of memory out of 5000000
- 48283 multiletter control sequences out of 15000+600000
- 688137 words of font info for 165 fonts, out of 8000000 for 9000
+ 21246 strings out of 468080
+ 357557 string characters out of 5421415
+ 1039207 words of memory out of 5000000
+ 49095 multiletter control sequences out of 15000+600000
+ 691659 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,16n,107p,484b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,13n,113p,1142b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{Usuario.login} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Usuario.nombre} has been referenced but does not ex
-ist, replaced by a fixed one
+pdfTeX warning (dest): name{Usuario.login} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{IU50} has been referenced but does not exist, repla
-ced by a fixed one
+pdfTeX warning (dest): name{Usuario.nombre} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{UI32} has been referenced but does not exist, repla
-ced by a fixed one
+pdfTeX warning (dest): name{IU50} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CU3.4} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{UI32} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{MSG1} has been referenced but does not exist, repla
-ced by a fixed one
+pdfTeX warning (dest): name{CU3.4} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUY.B} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{MSG1} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUY.A} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{CUY.B} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUZ} has been referenced but does not exist, replac
-ed by a fixed one
+pdfTeX warning (dest): name{CUY.A} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{IU2} has been referenced but does not exist, replac
-ed by a fixed one
+pdfTeX warning (dest): name{CUZ} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUY} has been referenced but does not exist, replac
-ed by a fixed one
+pdfTeX warning (dest): name{IU2} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUX.B} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{CUY} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUX.E3} has been referenced but does not exist, rep
-laced by a fixed one
+pdfTeX warning (dest): name{CUX.B} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUX.A} has been referenced but does not exist, repl
-aced by a fixed one
+pdfTeX warning (dest): name{CUX.E3} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{IU1} has been referenced but does not exist, replac
-ed by a fixed one
+pdfTeX warning (dest): name{CUX.A} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{IUX} has been referenced but does not exist, replac
-ed by a fixed one
+pdfTeX warning (dest): name{IU1} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{Entidad.Atributo} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{IUX} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{IdDelActor} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{Entidad.Atributo} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUCE3.3} has been referenced but does not exist, re
-placed by a fixed one
+pdfTeX warning (dest): name{IdDelActor} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{CUCE3.2} has been referenced but does not exist, re
-placed by a fixed one
+pdfTeX warning (dest): name{CUCE3.3} has been referenced but does not exist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{Pais} has been referenced but does not exist, repla
-ced by a fixed one
+pdfTeX warning (dest): name{CUCE3.2} has been referenced but does not exist, replaced by a fixed one
 
-
-pdfTeX warning (dest): name{Curso} has been referenced but does not exist, repl
-aced by a fixed one
-
-
-pdfTeX warning (dest): name{Domicilio} has been referenced but does not exist, 
-replaced by a fixed one
-
-<C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/fonta
-wesome5/FontAwesome5Free-Solid.pfb><C:/Users/Hector.Morales/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/marvosym/marvosym.pfb><C:/Users/Hector.Morales/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxss.pfb><C:/Users/Hec
-tor.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb>
-<C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfon
-ts/rtxsssc.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/txfonts/txsy.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/Hector.Morales/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Hector.Morales/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Hect
-or.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C
-:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/u
-hvr8a.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/times/utmr8a.pfb>
-Output written on proyecto.pdf (37 pages, 4661218 bytes).
+<C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxss.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxbsssc.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxsc.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxsssc.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txbtt.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Hector.Morales/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proyecto.pdf (80 pages, 5339882 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 191 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1297 PDF objects out of 1440 (max. 8388607)
+ 399 named destinations out of 1000 (max. 500000)
+ 648 words of extra memory for PDF output out of 10000 (max. 10000000)
 

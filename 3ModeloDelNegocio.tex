@@ -4,125 +4,489 @@
 \chapter{Modelo del Negocio}	
 \label{cap:reqSist}
 
-\cdtInstrucciones{Introduzca el capítulo describiendo el contenido del mismo, su organización y propósito.}
+Este capítulo describe el modelo de negocio del sistema de identificación y seguimiento de NNA afectados por feminicidios, estableciendo los fundamentos conceptuales para el análisis y diseño detallado. Se identifican y caracterizan los actores que interactuarán con el sistema, definiendo sus responsabilidades, perfil profesional y contexto de uso. Se establece un glosario de términos del negocio específicos del dominio (feminicidio, procesamiento de lenguaje natural, organizaciones civiles, clustering), facilitando comunicación precisa entre stakeholders. Se presenta el modelo del dominio del problema mediante diagrama conceptual de entidades y sus relaciones (Noticia, Caso, Medio, Cluster, Mención NNA), describiendo atributos y cardinalidades. Finalmente se documentan reglas de negocio que gobiernan operación del sistema y máquinas de estado que modelan ciclos de vida de entidades clave. Esta documentación sirve como referencia compartida entre usuarios finales, desarrolladores y evaluadores del proyecto.
 
 %----------------------------------------------------------
 \section{Actores del sistema}
 
-	\cdtInstrucciones{En esta sección describa a los actores del sistema.}
-	
-	%---------------------------------------------------------
-	\begin{Usuario}{\hypertarget{A.NombreDelUsuario}{\subsection{Nombre del usuario}}}{
-			Descripción del usuario: su puesto
-		}
-		\item[Responsabilidades:] \cdtEmpty
-		\begin{itemize}
-			\item Listar todas las responsabilidades y actividades dentro de la empresa.
-			\item ...
-		\end{itemize}
-		
-		\item[Perfil:] \cdtEmpty
-		\begin{itemize}
-			\item Describa el perfil del puesto: cursos, experiencia,habilidades blandas, escolaridad, certificaciones, etc.
-			\item ...
-		\end{itemize}
-		\item[Procesos en los que participa:] \cdtEmpty
-		\begin{itemize}
-			\item Liste los procesos en los que participa.
-			\item PC-V01 Aprobar las ordenes de compra al mayoreo.
-			\item ...
-		\end{itemize}
-		\item[Área:] Indique el nombre del área a la que pertenece dentro de la organización
-		\item[Cantidad aproximada:] Cantidad aproximada de personas que participan con este rol en el negocio.
-		\item[Horario actividad:] En qué horario se espera que utilice el sistema. 
-	\end{Usuario}
-	
+El sistema identifica siete perfiles de actores organizados en tres categorías: usuarios operativos de organizaciones civiles (quienes usan el sistema diariamente para documentación de casos), usuarios estratégicos (investigadores, autoridades gubernamentales, periodistas que consultan información para análisis y reportes), y administradores técnicos (responsables de mantenimiento y configuración del sistema). A continuación se describe cada actor con detalle.
+
 %---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.CoordinadorDocumentacion}{\subsection{Coordinador de Documentación}}}{
+        Responsable en organizaciones de la sociedad civil de mantener bases de datos actualizadas de casos de feminicidio y seguimiento de NNA afectados. Usa el sistema como herramienta principal para identificar nuevos casos reportados en medios de comunicación.
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Revisar diariamente dashboard web del sistema para identificar nuevos casos detectados automáticamente.
+        \item Validar precisión de detección automática de menciones de NNA, marcando falsos positivos y falsos negativos.
+        \item Complementar información de casos detectados con datos adicionales obtenidos de otras fuentes (comunicados oficiales, contacto directo con familias).
+        \item Exportar datasets filtrados para integración con bases de datos internas de la organización.
+        \item Generar reportes semanales sobre casos nuevos identificados para circulación interna en la organización.
+        \item Coordinarse con áreas de atención directa para canalizar casos que requieren intervención urgente.
+        \item Documentar casos que el sistema no detectó automáticamente para retroalimentación al equipo técnico.
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Licenciatura en Ciencias Sociales, Trabajo Social, Derecho, Psicología o áreas afines.
+        \item Experiencia: Mínimo 2 años trabajando en organizaciones civiles enfocadas en derechos humanos, violencia de género o derechos de infancia.
+        \item Conocimientos técnicos: Manejo intermedio de hojas de cálculo (Excel, Google Sheets), navegadores web, herramientas de búsqueda en Internet.
+        \item Habilidades blandas: Sensibilidad ante temas de violencia de género, atención al detalle, organización, capacidad de trabajo con información sensible manteniendo confidencialidad.
+        \item Deseable: Experiencia en metodologías de documentación de casos de derechos humanos, conocimiento de legislación mexicana sobre feminicidio y derechos de NNA.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item PR-01 Monitoreo de medios de comunicación
+        \item PR-02 Documentación y registro de casos
+        \item PR-06 Respuesta a solicitudes de información
+        \item PR-07 Detección de duplicados y validación de casos
+    \end{itemize}
+    
+    \item[Área:] Área de Documentación e Investigación de organización civil (Fundación Futuro con Derechos, REDIM, Data Cívica, colectivos estatales)
+    
+    \item[Cantidad aproximada:] 1-3 personas por organización (aproximadamente 15-20 usuarios potenciales a nivel nacional considerando organizaciones principales)
+    
+    \item[Horario actividad:] Lunes a viernes 9:00-18:00 hrs, con consultas ocasionales fuera de horario cuando surgen casos urgentes o de alto perfil mediático
+\end{Usuario}
+
+%---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.AnalistaDatos}{\subsection{Analista de Datos}}}{
+        Personal con formación técnica en organizaciones civiles responsable de generar análisis cuantitativos, estadísticas y visualizaciones para reportes institucionales, solicitudes de transparencia y presentaciones públicas.
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Consumir API REST del sistema para extraer datos estructurados y alimentar análisis personalizados.
+        \item Generar visualizaciones avanzadas (mapas geográficos, series de tiempo, correlaciones) usando herramientas externas (R, Python, Tableau).
+        \item Calcular métricas específicas no contempladas en dashboard estándar (tasas de incidencia por población, variaciones interanuales, patrones estacionales).
+        \item Validar calidad de datos identificando inconsistencias, valores atípicos o problemas de cobertura temporal/geográfica.
+        \item Desarrollar reportes automatizados que integren datos del sistema con otras fuentes (INEGI, Secretaría de Gobernación, fiscalías estatales).
+        \item Documentar metodología de análisis para garantizar reproducibilidad y transparencia.
+        \item Capacitar a personal no técnico en interpretación correcta de estadísticas generadas.
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Licenciatura en Ciencia de Datos, Estadística, Actuaría, Matemáticas Aplicadas, Economía o áreas cuantitativas. Deseable posgrado.
+        \item Experiencia: Mínimo 1 año en análisis de datos, preferentemente en contextos de investigación social, derechos humanos o salud pública.
+        \item Conocimientos técnicos: Programación en Python o R, análisis estadístico, visualización de datos (matplotlib, ggplot2, Tableau), consumo de APIs REST, manejo de formatos JSON/CSV, control de versiones (Git).
+        \item Habilidades blandas: Pensamiento analítico, comunicación de hallazgos técnicos a audiencias no especializadas, rigor metodológico.
+        \item Deseable: Experiencia con datos de texto no estructurado, conocimientos básicos de procesamiento de lenguaje natural, familiaridad con problemáticas de género.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item PR-03 Análisis cuantitativo de datos
+        \item PR-04 Identificación de patrones geográficos y temporales
+        \item PR-05 Elaboración de reportes institucionales
+        \item PR-06 Respuesta a solicitudes de información
+    \end{itemize}
+    
+    \item[Área:] Área de Investigación y Análisis de organización civil, o bien consultor externo contratado para proyectos específicos
+    
+    \item[Cantidad aproximada:] 1-2 personas por organización grande (aproximadamente 8-12 usuarios potenciales a nivel nacional)
+    
+    \item[Horario actividad:] Lunes a viernes 10:00-19:00 hrs, flexible según proyectos. Intensificación en periodos de elaboración de reportes semestrales/anuales
+\end{Usuario}
+
+%---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.InvestigadorAcademico}{\subsection{Investigador Académico}}}{
+        Científico social de universidades o centros de investigación que estudia violencia de género, derechos de infancia, políticas públicas o fenómenos relacionados. Utiliza datos del sistema como insumo para investigaciones publicables en revistas académicas o libros.
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Formular hipótesis de investigación verificables mediante datos del sistema (correlaciones geográficas, factores de riesgo, patrones temporales).
+        \item Descargar datasets completos o filtrados para análisis estadístico riguroso con controles metodológicos.
+        \item Triangular información del sistema con otras fuentes de datos para validación cruzada.
+        \item Documentar limitaciones metodológicas del sistema en publicaciones (sesgos de cobertura mediática, precisión de detección automática).
+        \item Citar apropiadamente el sistema en publicaciones académicas, reconociendo autoría y metodología.
+        \item Compartir hallazgos con organizaciones civiles y desarrolladores del sistema para retroalimentación mutua.
+        \item Solicitar acceso a datos históricos o funcionalidades específicas no disponibles en interfaz estándar.
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Posgrado (Maestría o Doctorado) en Sociología, Ciencias Políticas, Estudios de Género, Derechos Humanos, Demografía, Salud Pública o áreas relacionadas.
+        \item Experiencia: Investigación académica con publicaciones en revistas arbitradas, experiencia en metodologías cuantitativas o mixtas.
+        \item Conocimientos técnicos: Análisis estadístico avanzado (regresiones, modelos multinivel), software especializado (SPSS, Stata, R), manejo de datos secundarios.
+        \item Habilidades blandas: Rigor metodológico, escritura académica, capacidad de síntesis, ética en investigación con poblaciones vulnerables.
+        \item Deseable: Publicaciones previas sobre feminicidio, violencia de género o derechos de infancia en México, experiencia con datos de medios de comunicación.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item PR-03 Análisis cuantitativo de datos (uso externo al sistema)
+        \item PR-04 Identificación de patrones geográficos y temporales (uso externo)
+        \item PR-06 Respuesta a solicitudes de información
+    \end{itemize}
+    
+    \item[Área:] Universidades públicas y privadas (UNAM, COLMEX, UAM, CIESAS), centros de investigación independientes, organizaciones internacionales con componente académico
+    
+    \item[Cantidad aproximada:] 20-40 investigadores potencialmente interesados a nivel nacional, 5-10 usuarios activos frecuentes
+    
+    \item[Horario actividad:] Variable según calendario académico, mayor actividad en periodos de desarrollo de proyectos de investigación (septiembre-diciembre, febrero-junio)
+\end{Usuario}
+
+%---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.FuncionarioGobierno}{\subsection{Funcionario de Política Pública}}}{
+        Personal de gobierno a nivel federal o estatal responsable de diseñar, implementar o evaluar programas de atención a NNA en situación de orfandad por feminicidio, reparación del daño, o prevención de violencia de género.
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Consultar métricas agregadas por entidad federativa para identificar zonas que requieren atención prioritaria.
+        \item Solicitar reportes personalizados con características específicas (edad de NNA, tiempo transcurrido desde el caso, cobertura mediática).
+        \item Utilizar datos del sistema como evidencia para justificar asignación presupuestal a programas específicos.
+        \item Comparar cobertura de programas gubernamentales vs. casos documentados en el sistema para identificar brechas de atención.
+        \item Detectar casos de alto perfil que requieren seguimiento directo de autoridades superiores.
+        \item Coordinarse con fiscalías y comisiones de víctimas para cruce de información institucional con datos mediáticos.
+        \item Responder solicitudes de transparencia de organizaciones civiles mediante datos verificables del sistema.
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Licenciatura mínima en Administración Pública, Ciencias Políticas, Derecho, Trabajo Social o áreas relacionadas. Deseable posgrado en Políticas Públicas.
+        \item Experiencia: Mínimo 3 años en administración pública, preferentemente en áreas de atención a víctimas, protección de derechos de infancia, o igualdad de género.
+        \item Conocimientos técnicos: Manejo de sistemas gubernamentales, interpretación de indicadores de gestión, navegación web, herramientas office básicas.
+        \item Habilidades blandas: Comprensión de problemáticas sociales complejas, capacidad de coordinación interinstitucional, sensibilidad ante víctimas.
+        \item Marco legal: Conocimiento de Ley General de Víctimas, Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, Ley General de Derechos de NNA.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item PR-04 Identificación de patrones geográficos y temporales (consumo externo)
+        \item PR-05 Elaboración de reportes institucionales (consumo externo)
+        \item PR-06 Respuesta a solicitudes de información
+    \end{itemize}
+    
+    \item[Área:] SIPINNA (Sistema de Protección Integral de NNA), Comisiones Estatales de Víctimas, Institutos de la Mujer estatales, Fiscalías Especializadas en Feminicidio, Secretarías de Gobernación estatales
+    
+    \item[Cantidad aproximada:] 10-20 funcionarios a nivel federal, 3-5 por entidad federativa con alta incidencia (aproximadamente 50-80 usuarios potenciales)
+    
+    \item[Horario actividad:] Lunes a viernes 9:00-18:00 hrs (horario administrativo), con consultas ocasionales en preparación de informes trimestrales/anuales
+\end{Usuario}
+
+%---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.PeriodistaInvestigacion}{\subsection{Periodista de Investigación}}}{
+        Reportero especializado en temas de género, derechos humanos, seguridad o investigación que utiliza el sistema como herramienta de documentación y verificación para desarrollo de piezas periodísticas de largo aliento (reportajes, series, documentales).
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Consultar histórico de casos para identificar patrones noticiosos o ausencias en cobertura mediática que ameriten investigación periodística.
+        \item Verificar datos sobre casos específicos para contrastar con testimonios de fuentes primarias.
+        \item Identificar casos con características específicas (múltiples NNA huérfanos, ausencia de seguimiento institucional, ubicaciones específicas) como potenciales sujetos de reportaje.
+        \item Citar correctamente datos del sistema en piezas publicadas, reconociendo fuente y metodología.
+        \item Reportar al equipo técnico casos conocidos que el sistema no detectó, contribuyendo a mejorar cobertura.
+        \item Utilizar métricas del sistema para contextualizar casos individuales dentro de tendencias generales (``este caso es uno de X documentados en Y entidad durante Z periodo'').
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Licenciatura en Comunicación, Periodismo, Ciencias Sociales o áreas afines.
+        \item Experiencia: Mínimo 3 años de experiencia periodística, con al menos 1 año cubriendo fuentes de seguridad, procuración de justicia o derechos humanos.
+        \item Conocimientos técnicos: Investigación periodística, verificación de fuentes, manejo de bases de datos, herramientas digitales de investigación (búsquedas avanzadas, scraping básico).
+        \item Habilidades blandas: Sensibilidad ante víctimas y sobrevivientes, ética periodística, capacidad de trabajar con información traumática sin desensibilización.
+        \item Deseable: Especialización en periodismo de investigación, certificaciones en cobertura ética de violencia de género, experiencia en periodismo de datos.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item PR-06 Respuesta a solicitudes de información (consumo externo)
+        \item PR-04 Identificación de patrones geográficos y temporales (consumo externo para contexto periodístico)
+    \end{itemize}
+    
+    \item[Área:] Medios de comunicación nacionales e internacionales (prensa escrita, digital, radio, TV), medios especializados en investigación (Mexicanos Contra la Corrupción y la Impunidad, Quinto Elemento Lab, Pie de Página), periodistas freelance
+    
+    \item[Cantidad aproximada:] 15-30 periodistas potencialmente interesados, 5-10 usuarios ocasionales activos
+    
+    \item[Horario actividad:] Irregular según ciclos de producción periodística, mayor actividad en fechas simbólicas (25 de noviembre Día Internacional de la Eliminación de la Violencia contra la Mujer, 8 de marzo Día Internacional de la Mujer)
+\end{Usuario}
+
+%---------------------------------------------------------
+\begin{Usuario}{\hypertarget{A.AdministradorSistema}{\subsection{Administrador del Sistema}}}{
+        Desarrollador o ingeniero en sistemas responsable del mantenimiento técnico, configuración, monitoreo de salud y actualización del sistema. Puede ser parte del equipo original de desarrollo o personal de TI de organización adoptante del sistema.
+    }
+    \item[Responsabilidades:] \cdtEmpty
+    \begin{itemize}
+        \item Monitorear logs del sistema diariamente para detectar errores de recolección, caídas de fuentes RSS o problemas de procesamiento.
+        \item Actualizar lista de fuentes RSS cuando surjan nuevos medios relevantes o fuentes existentes cambien su estructura.
+        \item Ajustar parámetros de detección (keywords, thresholds de similitud, configuración de clustering) basándose en retroalimentación de usuarios finales.
+        \item Gestionar actualizaciones de dependencias de software (librerías Python, imágenes Docker base) manteniendo compatibilidad.
+        \item Realizar respaldos periódicos de datos y verificar integridad de backups.
+        \item Implementar mejoras incrementales al sistema según solicitudes de usuarios y limitaciones detectadas.
+        \item Documentar cambios realizados y mantener actualizada documentación técnica del sistema.
+        \item Capacitar a usuarios administradores de organizaciones civiles en operación básica del sistema.
+    \end{itemize}
+    
+    \item[Perfil:] \cdtEmpty
+    \begin{itemize}
+        \item Escolaridad: Licenciatura o Ingeniería en Ciencias Computacionales, Sistemas Computacionales, Software o áreas afines.
+        \item Experiencia: Mínimo 2 años desarrollando aplicaciones web o sistemas de procesamiento de datos, experiencia con Python, APIs REST, Docker.
+        \item Conocimientos técnicos obligatorios: Python 3.9+, Flask, Docker, Git, Linux/Unix, bash scripting, manejo de APIs REST, depuración de logs.
+        \item Conocimientos técnicos deseables: Procesamiento de lenguaje natural con scikit-learn, web scraping responsable, bases de datos relacionales (PostgreSQL/MySQL), CI/CD, Kubernetes.
+        \item Habilidades blandas: Resolución de problemas técnicos complejos, documentación clara, comunicación con usuarios no técnicos, trabajo colaborativo con organizaciones civiles.
+    \end{itemize}
+    
+    \item[Procesos en los que participa:] \cdtEmpty
+    \begin{itemize}
+        \item Monitoreo de salud del sistema (proceso interno)
+        \item Mantenimiento preventivo y correctivo (proceso interno)
+        \item Gestión de configuración y actualizaciones (proceso interno)
+        \item Respaldo y recuperación de datos (proceso interno)
+    \end{itemize}
+    
+    \item[Área:] Equipo de desarrollo original del proyecto (IPN-ESCOM), o bien área de TI de organización civil que adopte el sistema en producción
+    
+    \item[Cantidad aproximada:] 1-2 administradores principales (equipo de desarrollo TT), eventualmente 1 por organización grande que implemente el sistema localmente
+    
+    \item[Horario actividad:] Flexible, con revisión diaria de logs preferentemente en horario matutino (9:00-10:00 hrs). Disponibilidad ocasional fuera de horario para resolver incidentes críticos
+\end{Usuario}
+
+%----------------------------------------------------------
 \section{Términos del Negocio}
 \label{sec:terminosDeNegocio}
 
-\cdtInstrucciones{En esta sección describa todos los términos del negocio que aparecen en la especificación del sistema.}
-	
-\begin{description}
-	% Ejemplo de un término literal.
-	\item[\hypertarget{tAutomovil}{Automóvil:}] ({\em es un tipo de \hyperlink{tVehiculo}{Vehículo}}) De cuatro ruedas con capacidad de 5 a 9 personas. 
-	% Ejemplo de un término de entidad
-	\item[\hypertarget{tCliente}{Cliente:}] Se refiere a todas las personas físicas y morales que \hyperlink{tRenta}{rentan} o han rentado un \hyperlink{tVehiculo}{vehículo}.
-	
-	\item[\hypertarget{tDirector}{Director:}] ({\em es un tipo de \hyperlink{tEmpleado}{Empleado}}) Es el empleado que tiene mayor rango de todos y no tiene superior, a diferencia de los demás.	
-	\item[\hypertarget{tEmpleado}{Empleado:}] Se refiere a cualquier persona que labore en la empresa.
-	
-	\item[\hypertarget{tChecador}{Checador:}] ({\em Reloj asociado al atributo:} Hora de entrada y salida de un \hyperlink{tEmpleado}{empleado}. {\em Frecuencia de lectura:} Una vez al día para la entrada y otra para la salida durante los días laborales.
-	
-	\item[\hypertarget{tMotocicleta}{Motocicleta:}] ({\em es un tipo de {tVehiculo}{Vehículo}}) De dos ruedas con capacidad para una personas. 
+Este glosario define términos especializados del dominio que aparecen consistentemente en la especificación del sistema. Los términos se organizan alfabéticamente e incluyen referencias cruzadas mediante hiperenlaces. Se distinguen tres tipos de términos: conceptos del dominio social (feminicidio, NNA, organización civil), términos técnicos de procesamiento de lenguaje natural (clustering, TF-IDF, vectorización), y elementos específicos del sistema (detector dual-etapa, feed RSS, caso único).
 
-	\item[\hypertarget{tRenta}{Renta:}] Se refiere al servicio que ofrece la empresa para prestar \hyperlink{tVehiculo}{vehículos} a los \hyperlink{tCliente}{clientes} por un tiempo definido.
-	
-	\item[\hypertarget{tVehiculo}{Vehiculo:}] Se refiere a los automóviles y motocicletas que la empresa usa para dar el servicio de renta a los \hyperlink{tCliente}{clientes}.
-	
-%	\brTermSensor{tVelocimetro}{Velocímetro:}{Velocidad de un Vehículo.}{Kilometros/hora.}{Constantemente siempre que el \cdtRef{tVehiculo}{vehículo} esté encendido.}
+\begin{description}
+    \item[\hypertarget{tAPI}{API REST:}] ({\em Application Programming Interface - Representational State Transfer}) Interfaz de programación que permite consultar datos del sistema mediante peticiones HTTP estandarizadas. El sistema expone 6 endpoints principales: \texttt{/api/noticias}, \texttt{/api/search}, \texttt{/api/metrics}, \texttt{/api/clusters}, \texttt{/api/recent}, \texttt{/api/health}.
+    
+    \item[\hypertarget{tCasoUnico}{Caso único:}] Evento individual de feminicidio que puede haber generado múltiples \hyperlink{tNoticia}{noticias} en distintos medios. El sistema intenta identificar casos únicos mediante \hyperlink{tClustering}{clustering} de noticias similares, aunque en TT1 esta identificación es imperfecta debido a limitaciones de análisis semántico.
+    
+    \item[\hypertarget{tCluster}{Cluster:}] ({\em Grupo, agrupación}) Conjunto de \hyperlink{tNoticia}{noticias} automáticamente agrupadas por similitud de contenido usando algoritmo \hyperlink{tDBSCAN}{DBSCAN}. Idealmente cada cluster corresponde a un \hyperlink{tCasoUnico}{caso único}, pero ruido en agrupación puede generar fragmentación (un caso en múltiples clusters) o fusión (varios casos en un cluster).
+    
+    \item[\hypertarget{tClustering}{Clustering:}] Técnica de aprendizaje no supervisado que agrupa objetos similares sin etiquetas predefinidas. El sistema usa \hyperlink{tDBSCAN}{DBSCAN} para agrupar \hyperlink{tNoticia}{noticias} basándose en similitud de sus vectores \hyperlink{tTFIDF}{TF-IDF}, identificando \hyperlink{tCluster}{clusters} de forma adaptativa sin especificar número fijo de grupos.
+    
+    \item[\hypertarget{tCoherencia}{Coherencia de tópicos:}] Métrica que evalúa calidad semántica de \hyperlink{tTopico}{tópicos} generados por \hyperlink{tLDA}{LDA}. Valores más altos (cercanos a 1.0) indican que las palabras de un tópico co-ocurren frecuentemente en documentos, sugiriendo coherencia temática. El sistema calcula coherencia tipo C\_V para validar configuración de LDA.
+    
+    \item[\hypertarget{tDBSCAN}{DBSCAN:}] ({\em Density-Based Spatial Clustering of Applications with Noise}) Algoritmo de \hyperlink{tClustering}{clustering} que agrupa puntos densamente conectados y marca puntos aislados como ruido. Ventaja sobre K-Means: no requiere especificar número de clusters anticipadamente, adaptándose al corpus de \hyperlink{tNoticia}{noticias} disponible.
+    
+    \item[\hypertarget{tDeduplicacion}{Deduplicación:}] Proceso de identificar \hyperlink{tNoticiasDuplicadas}{noticias duplicadas} mediante cálculo de \hyperlink{tSimilitudCoseno}{similitud coseno} entre sus vectores \hyperlink{tTFIDF}{TF-IDF}. El sistema establece threshold $\geq$0.75 para marcar noticias como duplicadas, conservando solo una representante por grupo para conteos precisos.
+    
+    \item[\hypertarget{tDetectorDualEtapa}{Detector dual-etapa:}] Componente especializado del sistema que identifica \hyperlink{tNoticia}{noticias} relevantes en dos fases secuenciales: (1) Filtro de feminicidio mediante regex y keywords, (2) Detector de \hyperlink{tMencionNNA}{menciones NNA} mediante análisis contextual. Diseño dual reduce falsos positivos vs. detector de etapa única.
+    
+    \item[\hypertarget{tFalsoPositivo}{Falso positivo:}] \hyperlink{tNoticia}{Noticia} incorrectamente clasificada como relevante por el \hyperlink{tDetectorDualEtapa}{detector dual-etapa}. Ejemplo: noticia sobre violencia doméstica (no feminicidio) o mención de ``niños'' en contexto no relacionado con huérfanos. El sistema alcanza $\leq$10\% de tasa de falsos positivos en TT1.
+    
+    \item[\hypertarget{tFeedRSS}{Feed RSS:}] ({\em Really Simple Syndication}) Formato XML estandarizado que medios de comunicación publican automáticamente con sus últimas noticias. Ventaja sobre web scraping HTML: estructura predecible, sin bloqueos anti-bot, diseñado para consumo automatizado. Sistema consulta 10 feeds cada 6 horas.
+    
+    \item[\hypertarget{tFeminicidio}{Feminicidio:}] Asesinato de una mujer por razones de género, tipificado en el Código Penal Federal mexicano (Art. 325). Circunstancias agravantes incluyen violencia sexual, mutilaciones, antecedentes de violencia doméstica, y relación afectiva con el victimario. El sistema busca identificar casos reportados en medios independientemente de si fueron legalmente tipificados como feminicidio.
+    
+    \item[\hypertarget{tLDA}{LDA:}] ({\em Latent Dirichlet Allocation}) Algoritmo de modelado probabilístico que descubre \hyperlink{tTopico}{tópicos} latentes en colecciones de documentos. Asume que cada \hyperlink{tNoticia}{noticia} es mezcla de tópicos y cada tópico es distribución de palabras. Sistema configura LDA con 5 tópicos extrayendo 10 palabras representativas por tópico.
+    
+    \item[\hypertarget{tLematizacion}{Lematización:}] Proceso de reducir palabras a su forma base o lema (``corriendo''→``correr'', ``niños''→``niño''). Más sofisticado que stemming porque considera contexto morfológico. Sistema aplica lematización en etapa de limpieza de texto para mejorar agrupación de términos relacionados en \hyperlink{tTFIDF}{TF-IDF}.
+    
+    \item[\hypertarget{tMencionNNA}{Mención NNA:}] Referencia explícita o implícita en \hyperlink{tNoticia}{noticia} a niñas, niños o adolescentes afectados por el feminicidio. Patrones detectados: ``dejó N hijos'', ``madre de X menores'', ``quedaron huérfanos'', ``sus niños''. Sistema identifica menciones mediante análisis de patrones lingüísticos en segunda etapa del \hyperlink{tDetectorDualEtapa}{detector dual-etapa}.
+    
+    \item[\hypertarget{tMedioDecomunicacion}{Medio de comunicación:}] Organización periodística que publica noticias sobre eventos de interés público. Sistema recolecta de medios nacionales (La Jornada, Proceso, Aristegui Noticias) y estatales. Metadatos capturados por noticia: nombre del medio, URL, sección, fecha de publicación.
+    
+    \item[\hypertarget{tNNA}{NNA:}] ({\em Niñas, Niños y Adolescentes}) Personas menores de 18 años según Ley General de Derechos de Niñas, Niños y Adolescentes. En contexto del proyecto: hijos de víctimas de \hyperlink{tFeminicidio}{feminicidio} que quedan en situación de orfandad materna y requieren protección de derechos (educación, salud, atención psicológica, reparación del daño).
+    
+    \item[\hypertarget{tNoticia}{Noticia:}] Unidad básica de información procesada por el sistema. Consiste en: título, fecha de publicación, medio de origen, URL, contenido textual, metadatos agregados por sistema (cluster asignado, menciona\_nna, similitud con otras noticias). Fuentes: \hyperlink{tFeedRSS}{feeds RSS}, Google News API, scraping histórico.
+    
+    \item[\hypertarget{tNoticiasDuplicadas}{Noticias duplicadas:}] \hyperlink{tNoticia}{Noticias} que reportan el mismo evento con variaciones menores (republicaciones de agencias, resúmenes vs. notas completas). Sistema detecta mediante \hyperlink{tDeduplicacion}{deduplicación} con threshold de \hyperlink{tSimilitudCoseno}{similitud} $\geq$0.75. Ejemplo: misma nota de feminicidio en Chihuahua publicada por El Diario de Chihuahua, El Sol de Chihuahua, y Proceso.
+    
+    \item[\hypertarget{tOrganizacionCivil}{Organización civil:}] ({\em OSC, Organización de la Sociedad Civil}) Entidad sin fines de lucro que trabaja en defensa de derechos humanos, derechos de infancia o prevención de violencia de género. Usuarios principales del sistema: Fundación Futuro con Derechos, REDIM, Data Cívica, colectivos estatales de familiares de víctimas, Observatorio Ciudadano Nacional del Feminicidio.
+    
+    \item[\hypertarget{tPLN}{PLN:}] ({\em Procesamiento de Lenguaje Natural, NLP por sus siglas en inglés}) Rama de inteligencia artificial que procesa texto en lenguaje humano. Técnicas usadas en sistema: limpieza de texto, tokenización, remoción de stopwords, \hyperlink{tLematizacion}{lematización}, \hyperlink{tVectorizacion}{vectorización}, \hyperlink{tClustering}{clustering}, modelado de \hyperlink{tTopico}{tópicos}.
+    
+    \item[\hypertarget{tPrecision}{Precisión:}] Métrica de evaluación de clasificación: $\text{Precisión} = \frac{TP}{TP + FP}$ donde TP son verdaderos positivos (noticias relevantes correctamente identificadas) y FP son \hyperlink{tFalsoPositivo}{falsos positivos}. Sistema alcanza $\geq$90\% precisión en detección de noticias con \hyperlink{tMencionNNA}{menciones NNA}.
+    
+    \item[\hypertarget{tSimilitudCoseno}{Similitud coseno:}] Métrica de similitud entre vectores calculada como: $\text{sim}(\vec{a},\vec{b}) = \frac{\vec{a} \cdot \vec{b}}{||\vec{a}|| \cdot ||\vec{b}||}$. Valores entre 0 (ortogonales, sin similitud) y 1 (idénticos). Sistema usa similitud coseno entre vectores \hyperlink{tTFIDF}{TF-IDF} para \hyperlink{tDeduplicacion}{deduplicación} y análisis de \hyperlink{tCluster}{clusters}.
+    
+    \item[\hypertarget{tStopwords}{Stopwords:}] ({\em Palabras vacías}) Palabras de alta frecuencia y bajo contenido semántico (``el'', ``la'', ``de'', ``que'', ``y''). Sistema remueve stopwords en español durante limpieza de texto para reducir ruido en \hyperlink{tVectorizacion}{vectorización} y mejorar precisión de \hyperlink{tClustering}{clustering}.
+    
+    \item[\hypertarget{tTFIDF}{TF-IDF:}] ({\em Term Frequency - Inverse Document Frequency}) Técnica de \hyperlink{tVectorizacion}{vectorización} que pondera palabras según su frecuencia en documento (TF) inversamente ponderada por su frecuencia en corpus (IDF). Palabras frecuentes en documento pero raras en corpus reciben mayor peso. Sistema configura TF-IDF con máximo 3,000 features.
+    
+    \item[\hypertarget{tTopico}{Tópico:}] Tema latente identificado por \hyperlink{tLDA}{LDA} representado como distribución de probabilidad sobre palabras. Ejemplo de tópico: \{``feminicidio'': 0.15, ``mujer'': 0.12, ``asesinato'': 0.10, ``violencia'': 0.08...\}. Sistema genera 5 tópicos principales del corpus de \hyperlink{tNoticia}{noticias} procesadas.
+    
+    \item[\hypertarget{tVectorizacion}{Vectorización:}] Transformación de texto a representación numérica (vector) que algoritmos de machine learning pueden procesar. Sistema usa \hyperlink{tTFIDF}{TF-IDF} para convertir contenido de \hyperlink{tNoticia}{noticias} a vectores de dimensión 3,000, habilitando cálculo de \hyperlink{tSimilitudCoseno}{similitud} y \hyperlink{tClustering}{clustering}.
+    
+    \item[\hypertarget{tWebScraping}{Web scraping:}] Técnica de extracción automatizada de datos de sitios web mediante scripts. Sistema evita scraping HTML directo (bloqueado por Cloudflare) adoptando estrategia de \hyperlink{tFeedRSS}{feeds RSS} y APIs. Excepción: scraping histórico del Mapa de Feminicidios con rate limiting respetuoso ($\leq$1 petición por segundo).
 \end{description}
 
 %----------------------------------------------------------
 \section{Modelo del dominio del problema}
 \label{sec:hechosDeNegocio}
 
-\cdtInstrucciones{En esta sección describa todas las entidades del negocio y sus relaciones.}
+El modelo del dominio del problema representa las entidades conceptuales clave del sistema y sus relaciones estructurales. Se identifican seis entidades principales: \textbf{Noticia} (unidad básica de información recolectada), \textbf{Medio} (fuente periodística), \textbf{Caso} (evento de feminicidio), \textbf{Cluster} (agrupación automática de noticias similares), \textbf{Mención NNA} (referencia a hijos huérfanos), y \textbf{Tópico} (tema latente identificado por LDA). Las relaciones modelan: publicación de noticias por medios, detección de menciones NNA en noticias, agrupación de noticias en clusters, asociación de noticias con tópicos probabilísticos, y correspondencia ideal (no siempre lograda) entre clusters y casos únicos.
 
-	El modelo del dominio del problema se muestra en la figura~\ref{fig:modeloDeDominio}, a continuación se describen cada una de las entidades y sus relaciones.
-	
+El modelo se presenta en la Figura~\ref{fig:modeloDeDominio}, seguido por descripción detallada de cada entidad con sus atributos, tipos de datos, obligatoriedad y relaciones con otras entidades del dominio.
+
 \begin{figure}[htpb!]
-	\begin{center}
-		\includegraphics[angle=90,width=.95\textwidth]{images/modeloDelDominioDelProblema}
-		\caption{Modelo del dominio del problema}
-		\label{fig:modeloDeDominio}
-	\end{center}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{modeloDelDominioDelProblema}
+        \caption{Modelo del dominio del problema - Sistema de identificación de NNA afectados por feminicidios}
+        \label{fig:modeloDeDominio}
+    \end{center}
 \end{figure}
 
-\begin{cdtEntidad}{Alumno}{Alumno}
-	\brAttr{registro}{Registro}{Id}{Número de registro utilizado para identificar un alumno}{Sí}
-	\brAttr{nombre}{Nombre}{Palabra Corta}
-		{Nombre o nombres del alumno.}{Sí}
-	\brAttr{primerApellido}{Primer apellido}{Palabra Corta}
-		{Primer apellido del alumno.}{Sí}
-	\brAttr{segundoApellido}{Segundo apellido}{Palabra Corta}
-		{Segundo apellido del alumno.}{No}
-	\brAttr{CURP}{CURP}{CURP}
-		{CURP del alumno.}{Sí}
-	\brAttr{nacimiento}{Nacimiento}{Fecha}
-		{Fecha de nacimiento del alumno.}{Sí}
-	\brAttr{genero}{Género}{Domicilio}
-		{Género del alumno.}{No}
-	\brAttr{telefono}{Teléfono}{Telefono}
-		{Teléfono para contactar al alumno.}{Sí}
-	\brAttr{correo}{Correo}{Correo}
-		{Correo del alumno para enviar información académica y escolar y para recuperación de clave de acceso.}{Sí}
-	\cdtEntityRelSection
-	\brRel{\brRelComposition}{Domicilio}{Un \hyperlink{Alumno}{Alumno} reside en un \hyperlink{Domicilio}{Domicilio}}	
-	\brRel{\brRelAgregation}{Grupo}{Un \hyperlink{Alumno}{Alumno} toma un \hyperlink{Curso}{Curso}}	
+\textbf{Nota:} Crear diagrama de entidad-relación con las siguientes entidades y relaciones:
+\begin{itemize}
+    \item \textbf{Entidades principales:} Noticia, Medio, Caso, Cluster, MencionNNA, Tópico, FuenteRSS
+    \item \textbf{Relaciones clave:} 
+    \begin{itemize}
+        \item Medio (1) ---publicar--→ (0..*) Noticia
+        \item Noticia (1) ---pertenecer--→ (0..1) Cluster
+        \item Noticia (1) ---contener--→ (0..1) MencionNNA
+        \item Noticia (0..*) ---distribuirse--→ (1..*) Tópico [con probabilidad]
+        \item Cluster (1) ---corresponder--→ (0..1) Caso [ideal, no siempre logrado]
+        \item FuenteRSS (1) ---proveer--→ (0..*) Noticia
+    \end{itemize}
+\end{itemize}
+
+\begin{cdtEntidad}{Noticia}{Noticia}
+    \brAttr{id}{Identificador}{Id}{Identificador único autoincrementado asignado al ingestar noticia al sistema}{Sí}
+    \brAttr{titulo}{Título}{Cadena Larga}
+        {Título completo de la noticia tal como fue publicado por el medio}{Sí}
+    \brAttr{url}{URL}{URL}
+        {Dirección web completa de la noticia original para acceso directo y verificación}{Sí}
+    \brAttr{fechaPublicacion}{Fecha de publicación}{Fecha}
+        {Fecha en que el medio publicó la noticia según metadata del feed RSS o scraping}{Sí}
+    \brAttr{contenido}{Contenido}{Texto Largo}
+        {Cuerpo completo de la noticia extraído de RSS (snippet) o scraping (texto completo)}{Sí}
+    \brAttr{contenidoLimpio}{Contenido limpio}{Texto Largo}
+        {Versión preprocesada del contenido: minúsculas, sin stopwords, lematizado, para análisis PLN}{Sí}
+    \brAttr{vectorTFIDF}{Vector TF-IDF}{Vector[3000]}
+        {Representación vectorial numérica del contenido limpio generada por TfidfVectorizer}{Sí}
+    \brAttr{mencionaNNA}{Menciona NNA}{Booleano}
+        {Bandera indicando si el detector dual-etapa identificó mención de niños huérfanos (true) o no (false)}{Sí}
+    \brAttr{esFeminicidio}{Es feminicidio}{Booleano}
+        {Bandera indicando si la noticia fue clasificada como relacionada con feminicidio en etapa 1 del detector}{Sí}
+    \brAttr{clusterID}{ID de Cluster}{Entero}
+        {Identificador del cluster al que pertenece según DBSCAN, o -1 si es ruido no agrupado}{Sí}
+    \brAttr{fechaIngesta}{Fecha de ingesta}{Fecha y hora}
+        {Timestamp de cuando el sistema procesó e ingresó la noticia al almacenamiento}{Sí}
+    \cdtEntityRelSection
+    \brRel{\brRelComposition}{Medio}{Una \hyperlink{Noticia}{Noticia} es publicada por un \hyperlink{Medio}{Medio}}	
+    \brRel{\brRelAgregation}{Cluster}{Una \hyperlink{Noticia}{Noticia} puede pertenecer a un \hyperlink{Cluster}{Cluster}}	
+    \brRel{\brRelComposition}{MencionNNA}{Una \hyperlink{Noticia}{Noticia} puede contener una \hyperlink{MencionNNA}{Mención NNA}}
+    \brRel{\brRelAgregation}{Tópico}{Una \hyperlink{Noticia}{Noticia} se distribuye probabilísticamente sobre múltiples \hyperlink{Topico}{Tópicos}}
 \end{cdtEntidad}
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-\begin{cdtEntidad}{AlumnoExtranjero}{Alumno Extranjero}%{}
-	\brAttr{numeroResidente}{Numero de residente}{Id}{Número de registro dado por la Secretaría de Relaciones Exteriores a los extranjeros.}{Si}
-	\brAttr{paisOrigen}{Pais origen}{\hyperlink{Pais}{País}}
-		{País de origen del alumno extranjero.}{Sí}
-	\cdtEntityRelSection
-	\brRel{\brRelAgregation}{País}{Un \hyperlink{Alumno}{Alumno} es originario de un \hyperlink{Pais}{Pais}}	
-	\brRel{\brRelGeneralization}{Alumno}{Un \hyperlink{AlumnoExtranjero}{Alumno Extranjero} es un  \hyperlink{Alumno}{Alumno}}	
-	\brRel{\brRelParticipation}{Alumno}{Un \hyperlink{AlumnoExtranjero}{Alumno Extranjero} es un  \hyperlink{Alumno}{Alumno}}	
+\begin{cdtEntidad}{Medio}{Medio de Comunicación}
+    \brAttr{id}{Identificador}{Id}{Identificador único del medio en el sistema}{Sí}
+    \brAttr{nombre}{Nombre}{Palabra Corta}
+        {Nombre oficial del medio (La Jornada, Proceso, Aristegui Noticias, etc.)}{Sí}
+    \brAttr{urlBase}{URL base}{URL}
+        {Dirección web raíz del sitio del medio (https://www.jornada.com.mx)}{Sí}
+    \brAttr{feedRSS}{Feed RSS}{URL}
+        {URL del feed RSS específico monitoreado por el sistema}{No}
+    \brAttr{alcance}{Alcance}{Enumeración}
+        {Clasificación de cobertura: Nacional, Estatal, Regional, según área geográfica principal del medio}{Sí}
+    \brAttr{activo}{Activo}{Booleano}
+        {Bandera indicando si el medio está siendo monitoreado activamente (true) o deshabilitado temporalmente (false)}{Sí}
+    \brAttr{numNoticiasProcesadas}{Noticias procesadas}{Entero}
+        {Contador de noticias recolectadas de este medio desde inicio del sistema}{Sí}
+    \cdtEntityRelSection
+    \brRel{\brRelComposition}{Noticia}{Un \hyperlink{Medio}{Medio} publica múltiples \hyperlink{Noticia}{Noticias}}	
+    \brRel{\brRelAgregation}{FuenteRSS}{Un \hyperlink{Medio}{Medio} puede tener asociado una \hyperlink{FuenteRSS}{Fuente RSS}}
+\end{cdtEntidad}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\begin{cdtEntidad}{Cluster}{Cluster de Noticias}
+    \brAttr{id}{Identificador}{Id}{Identificador numérico único del cluster asignado por DBSCAN}{Sí}
+    \brAttr{numeroNoticias}{Número de noticias}{Entero}
+        {Cantidad de noticias agrupadas en este cluster}{Sí}
+    \brAttr{centroide}{Centroide}{Vector[3000]}
+        {Vector TF-IDF promedio de todas las noticias del cluster, representa contenido temático central}{Sí}
+    \brAttr{palabrasClave}{Palabras clave}{Lista de cadenas}
+        {Top 10 palabras con mayor peso TF-IDF en el centroide, resumen temático del cluster}{Sí}
+    \brAttr{cohesionInterna}{Cohesión interna}{Real [0-1]}
+        {Métrica de similitud coseno promedio entre noticias del cluster, valores mayores indican agrupación cohesiva}{Sí}
+    \brAttr{fechaMasTemprana}{Fecha más temprana}{Fecha}
+        {Fecha de publicación de la noticia más antigua del cluster, indica inicio temporal del caso}{Sí}
+    \brAttr{fechaMasReciente}{Fecha más reciente}{Fecha}
+        {Fecha de publicación de la noticia más reciente, indica seguimiento temporal del caso}{Sí}
+    \brAttr{casoAsociado}{Caso asociado}{Referencia}
+        {Referencia opcional a entidad Caso si se determinó correspondencia con evento real específico (proceso manual TT2)}{No}
+    \cdtEntityRelSection
+    \brRel{\brRelComposition}{Noticia}{Un \hyperlink{Cluster}{Cluster} agrupa múltiples \hyperlink{Noticia}{Noticias}}	
+    \brRel{\brRelAgregation}{Caso}{Un \hyperlink{Cluster}{Cluster} puede corresponder a un \hyperlink{Caso}{Caso} único (ideal)}
+\end{cdtEntidad}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\begin{cdtEntidad}{MencionNNA}{Mención de NNA}
+    \brAttr{id}{Identificador}{Id}{Identificador único de la mención detectada}{Sí}
+    \brAttr{textoContexto}{Texto de contexto}{Cadena Larga}
+        {Fragmento de texto circundante donde se detectó la mención (±50 caracteres)}{Sí}
+    \brAttr{patronDetectado}{Patrón detectado}{Cadena Corta}
+        {Expresión regular o patrón lingüístico que activó detección (``dejó N hijos'', ``madre de'', etc.)}{Sí}
+    \brAttr{numeroNNA}{Número de NNA}{Entero}
+        {Cantidad de NNA mencionados si es explícita (``dejó 3 hijos''), o null si es implícita}{No}
+    \brAttr{edadesNNA}{Edades de NNA}{Lista de enteros}
+        {Lista de edades mencionadas si están presentes (``hijos de 5 y 8 años''), lista vacía si no se especifican}{No}
+    \brAttr{confianzaDeteccion}{Confianza de detección}{Real [0-1]}
+        {Score de confianza del detector en la mención (1.0 = patrón explícito, <1.0 = patrón ambiguo)}{Sí}
+    \cdtEntityRelSection
+    \brRel{\brRelComposition}{Noticia}{Una \hyperlink{MencionNNA}{Mención NNA} pertenece a una \hyperlink{Noticia}{Noticia}}	
+\end{cdtEntidad}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\begin{cdtEntidad}{Topico}{Tópico LDA}
+    \brAttr{id}{Identificador}{Id}{Identificador numérico del tópico (0 a n\_topics-1 configurado en LDA)}{Sí}
+    \brAttr{palabrasTop}{Palabras top}{Lista de tuplas}
+        {Lista de (palabra, peso) con las 10 palabras más representativas del tópico ordenadas descendentemente}{Sí}
+    \brAttr{etiquetaInterpretativa}{Etiqueta interpretativa}{Cadena Corta}
+        {Etiqueta semántica asignada manualmente al tópico basándose en palabras top (``Feminicidios urbanos'', ``Violencia intrafamiliar'', etc.)}{No}
+    \brAttr{coherencia}{Coherencia}{Real}
+        {Score de coherencia C\_V del tópico, indica calidad semántica (valores típicos 0.3-0.7)}{Sí}
+    \brAttr{numeroNoticiasAsociadas}{Noticias asociadas}{Entero}
+        {Cantidad de noticias donde este tópico tiene probabilidad dominante ($>$0.3)}{Sí}
+    \cdtEntityRelSection
+    \brRel{\brRelAgregation}{Noticia}{Un \hyperlink{Topico}{Tópico} se distribuye sobre múltiples \hyperlink{Noticia}{Noticias} con diferentes probabilidades}
+\end{cdtEntidad}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\begin{cdtEntidad}{Caso}{Caso de Feminicidio}
+    \brAttr{id}{Identificador}{Id}{Identificador único del caso validado}{Sí}
+    \brAttr{nombreVictima}{Nombre de víctima}{Cadena Corta}
+        {Nombre de la víctima si fue divulgado públicamente (respetando privacidad según contexto)}{No}
+    \brAttr{fechaCaso}{Fecha del caso}{Fecha}
+        {Fecha en que ocurrió el feminicidio según reportes oficiales o periodísticos}{Sí}
+    \brAttr{entidadFederativa}{Entidad federativa}{Cadena Corta}
+        {Estado de la República donde ocurrió el caso}{Sí}
+    \brAttr{municipio}{Municipio}{Cadena Corta}
+        {Municipio específico donde ocurrió el caso}{No}
+    \brAttr{numeroNNAAfectados}{Número de NNA}{Entero}
+        {Cantidad confirmada de NNA que quedaron en situación de orfandad}{No}
+    \brAttr{statusLegal}{Status legal}{Enumeración}
+        {Estado de la investigación: En investigación, Tipificado como feminicidio, Sentenciado, Desconocido}{No}
+    \brAttr{clusterAsociado}{Cluster asociado}{Referencia}
+        {Referencia al cluster de noticias que documenta este caso}{No}
+    \brAttr{validadoPor}{Validado por}{Cadena Corta}
+        {Nombre de organización u organismo que validó manualmente el caso (uso futuro TT2)}{No}
+    \cdtEntityRelSection
+    \brRel{\brRelAgregation}{Cluster}{Un \hyperlink{Caso}{Caso} puede estar documentado por un \hyperlink{Cluster}{Cluster}}	
+    \brRel{\brRelComposition}{MencionNNA}{Un \hyperlink{Caso}{Caso} puede tener múltiples \hyperlink{MencionNNA}{Menciones NNA} en diferentes noticias}
+\end{cdtEntidad}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\begin{cdtEntidad}{FuenteRSS}{Fuente RSS}
+    \brAttr{id}{Identificador}{Id}{Identificador único de la fuente RSS en configuración del sistema}{Sí}
+    \brAttr{url}{URL del feed}{URL}
+        {Dirección completa del feed RSS/Atom consultado}{Sí}
+    \brAttr{frecuenciaActualizacion}{Frecuencia de actualización}{Intervalo}
+        {Cada cuántas horas el sistema consulta este feed (típicamente 6 horas)}{Sí}
+    \brAttr{ultimaConsultaExitosa}{Última consulta exitosa}{Fecha y hora}
+        {Timestamp de la última vez que el feed fue consultado exitosamente}{Sí}
+    \brAttr{ultimoError}{Último error}{Cadena Larga}
+        {Mensaje de error de la última consulta fallida, null si última consulta fue exitosa}{No}
+    \brAttr{activo}{Activo}{Booleano}
+        {Bandera de habilitación: true si debe ser consultado, false si fue deshabilitado por errores persistentes}{Sí}
+    \cdtEntityRelSection
+    \brRel{\brRelAgregation}{Medio}{Una \hyperlink{FuenteRSS}{Fuente RSS} provee noticias de un \hyperlink{Medio}{Medio}}	
+    \brRel{\brRelComposition}{Noticia}{Una \hyperlink{FuenteRSS}{Fuente RSS} provee múltiples \hyperlink{Noticia}{Noticias}}
 \end{cdtEntidad}
 
 %---------------------------------------------------------
 \section{Modelado de Reglas de negocio}
 
+Las reglas de negocio definen restricciones, políticas y lógica operativa que gobiernan el comportamiento del sistema. Se organizan en cinco categorías: reglas de recolección (cuándo y cómo obtener noticias), reglas de detección (criterios para clasificar relevancia), reglas de procesamiento PLN (configuraciones de algoritmos), reglas de almacenamiento (integridad de datos), y reglas de acceso (quién puede consultar qué información). Estas reglas son implementadas mediante validaciones en código, configuraciones de parámetros y políticas de uso documentadas.
 
 \input{3-1-reglas}
 
-
 \section{Máquinas de estado}
 
+Las máquinas de estado modelan ciclos de vida de entidades clave del sistema, especificando estados posibles, transiciones permitidas, eventos que disparan transiciones, y acciones asociadas. Se documentan tres máquinas principales: (1) Estado de Noticia (desde recolección hasta almacenamiento persistente), (2) Estado de Fuente RSS (operativa, en advertencia, deshabilitada), y (3) Estado de Caso (pendiente validación, validado, descartado). Estas máquinas facilitan comprensión de flujos de procesamiento y guían implementación de lógica de transición en el código.
+
 \input{3-2-estados.tex}
-
-
-

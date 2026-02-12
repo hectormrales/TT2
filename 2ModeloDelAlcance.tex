@@ -1,190 +1,407 @@
-% !TeX root = proyecto.tex
+% !TeX root = main.tex
 
 %=========================================================
 \chapter{Modelo del alcance}
 \label{cap:alcance}
 
-\cdtInstrucciones{
-	Indique un resumen que describa el contenido del capítulo.
-}
-	
+Este capítulo presenta el análisis detallado de la problemática abordada por el proyecto, identificando el contexto social y técnico que motiva el desarrollo del sistema. Se describen los problemas específicos detectados, sus causas y consecuencias, así como las características de la solución propuesta. Posteriormente se definen los objetivos del proyecto, usuarios identificados, procesos involucrados, requerimientos de usuario y la especificación de la plataforma tecnológica que soportará el sistema de identificación y seguimiento de derechos de NNA afectados por feminicidios en México.
+
 %---------------------------------------------------------
 \section{Análisis de la problemática}
+\label{sec:analisis_problematica}
 
-\cdtInstrucciones{
-	Indique en un párrafo o dos el contenido y organización de la problemática.
-}
+La problemática se estructura en tres dimensiones: social (orfandad por feminicidio sin seguimiento institucional), organizacional (trabajo manual insostenible en organizaciones civiles) y técnica (información no estructurada dispersa en múltiples fuentes). El análisis aborda el contexto del feminicidio en México, identifica problemas específicos de recolección y estructuración de datos, examina causas relacionadas con falta de sistemas automatizados y dispersión de fuentes, evalúa consecuencias de la invisibilización de casos, y propone una solución tecnológica basada en web scraping inteligente y procesamiento de lenguaje natural.
+
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Contexto del proyecto}
 
-\cdtInstrucciones{
-	Indique los antecedentes, contexto y características relevantes necesarios para comprender la problemática a resolver.
-}
+Entre 2010 y 2023, más de 8,000 mujeres fueron víctimas de feminicidio en México según datos de la Secretaría de Gobernación. Cada uno de estos casos no solo representa la pérdida de una vida, sino que deja tras de sí niñas, niños y adolescentes en situación de orfandad. La Red por los Derechos de la Infancia en México (REDIM) estima que al menos 3,500 NNA perdieron a su madre por feminicidio durante este periodo, aunque no existe un censo oficial que documente con precisión esta cifra.
+
+La información sobre estos casos se encuentra dispersa en múltiples fuentes: notas periodísticas de medios locales y nacionales, comunicados oficiales de fiscalías estatales, reportes de organizaciones de la sociedad civil, y testimonios en redes sociales. Esta fragmentación impide dimensionar el problema de manera integral, identificar patrones geográficos o temporales, rastrear el seguimiento de casos individuales, y evaluar si los NNA afectados reciben la atención psicológica, educativa y jurídica a la que tienen derecho según la legislación mexicana.
+
+Organizaciones como la Fundación Futuro con Derechos y el colectivo Data Cívica han documentado la dificultad de mantener bases de datos actualizadas mediante metodologías manuales. El Mapa de Feminicidios en México, proyecto colaborativo de registro ciudadano, ha logrado documentar miles de casos mediante trabajo voluntario, pero reconoce limitaciones de recursos humanos para revisar exhaustivamente todas las fuentes disponibles diariamente. Las autoridades gubernamentales, por su parte, no cuentan con un sistema integrado que vincule casos de feminicidio con el estatus de los hijos de la víctima, dificultando la implementación efectiva de programas de reparación del daño.
+
+El contexto tecnológico actual ofrece herramientas de procesamiento de lenguaje natural, web scraping automatizado y análisis de datos masivos que no han sido aplicadas sistemáticamente a esta problemática. Experiencias internacionales en monitoreo automatizado de noticias (como el Global Database of Events, Language and Tone - GDELT) demuestran la viabilidad técnica de recolectar y estructurar información de fuentes públicas a gran escala.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Problemas identificados}
 
-\cdtInstrucciones{
-	Describa el problema general y realice una lista con los problemas específicos a resolver mediante el proyecto.
-}
 El problema general que atiende el presente proyecto es: 
 
-
 \begin{quotation}
-	{\em ``Descripción de la problemática generar''}
+    {\em ``La inexistencia de un sistema automatizado para identificar, recolectar y estructurar información sobre niñas, niños y adolescentes afectados por feminicidios en México, lo que impide a organizaciones civiles, autoridades gubernamentales e investigadores dimensionar el problema, dar seguimiento a casos individuales, identificar patrones epidemiológicos y evaluar la efectividad de programas de atención a esta población vulnerable.''}
 \end{quotation}
 
 Los problemas identificados son\FootnotePrioridad
 
 \begin{problemas}
-   \problema{P-01}{Nombre problema}{Descripción del problema}{A}
-   \problema{P-02}{Nombre del problema}{Descripción}{M}
-   \problema{...}{...}{...}{...}
+   \problema{P-01}{Dispersión de información}{La información sobre feminicidios y NNA afectados se encuentra fragmentada en cientos de medios de comunicación locales y nacionales, comunicados gubernamentales y reportes de organizaciones civiles, sin un repositorio centralizado que permita su consulta sistemática.}{A}
+   
+   \problema{P-02}{Trabajo manual insostenible}{Las organizaciones civiles dedican entre 10 y 15 horas semanales a revisar manualmente sitios de noticias buscando casos relevantes, proceso que no escala ante el volumen de información publicada diariamente y resulta en cobertura parcial.}{A}
+   
+   \problema{P-03}{Ausencia de datos estructurados}{La información existe como texto no estructurado en artículos periodísticos, dificultando búsquedas, filtrado por criterios específicos (ubicación, edad de NNA, circunstancias del caso), análisis estadístico y generación de reportes.}{A}
+   
+   \problema{P-04}{Falta de identificación automatizada}{No existen herramientas especializadas que distingan automáticamente noticias de feminicidio de otros delitos violentos, ni que identifiquen menciones de hijos huérfanos dentro del contenido noticioso.}{M}
+   
+   \problema{P-05}{Imposibilidad de análisis de patrones}{La dispersión y falta de estructura impide análisis de patrones geográficos (entidades con mayor incidencia), temporales (tendencias anuales), demográficos (edades de NNA afectados) y contextuales (circunstancias del feminicidio).}{M}
+   
+   \problema{P-06}{Bloqueos técnicos de scraping}{Los intentos de web scraping directo enfrentan bloqueos anti-bot (HTTP 403/406), protecciones Cloudflare, y contenido generado dinámicamente por JavaScript, impidiendo la recolección automatizada tradicional.}{M}
+   
+   \problema{P-07}{Duplicación y ruido informativo}{La misma noticia es republicada por múltiples medios con variaciones menores, generando duplicados que inflan conteos artificialmente y dificultan identificar casos únicos.}{B}
+   
+   \problema{P-08}{Invisibilización de casos}{Los casos que no reciben cobertura mediática nacional o que son publicados exclusivamente en medios locales de difícil acceso quedan fuera del seguimiento de organizaciones con recursos limitados.}{B}
 \end{problemas}
  
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Análisis de causas probables}
 
-\cdtInstrucciones{
-	Describa las posibles causas de los problemas señalados.
-}
+Las causas identificadas que generan y perpetúan los problemas señalados son:
+
 \begin{description}
-	\item[P-01] Describa una de las posibles causas de la problemática.
-	\item[...] ...
+    \item[P-01] \textbf{Dispersión de información:} No existe coordinación interinstitucional entre autoridades estatales, federales, medios de comunicación y organizaciones civiles para centralizar datos. Las fiscalías estatales operan de manera independiente sin protocolo unificado de publicación de información. Los medios de comunicación priorizan inmediatez noticiosa sobre estructuración de datos.
+    
+    \item[P-02] \textbf{Trabajo manual insostenible:} Las organizaciones civiles carecen de presupuesto para contratar personal dedicado exclusivamente a monitoreo de medios. No cuentan con conocimientos técnicos especializados en desarrollo de sistemas automatizados. Dependen de trabajo voluntario que es intermitente y no profesionalizado.
+    
+    \item[P-03] \textbf{Ausencia de datos estructurados:} Los artículos periodísticos se redactan en lenguaje natural sin formato estandarizado. No existe obligación legal para que medios o autoridades publiquen información en formatos estructurados (JSON, XML, bases de datos abiertas). Las plataformas de gestión de contenido de medios no están diseñadas para extracción sistemática de datos.
+    
+    \item[P-04] \textbf{Falta de identificación automatizada:} La complejidad del lenguaje natural requiere técnicas avanzadas de PLN que no están implementadas. Las menciones de NNA son contextuales y variadas (``dejó dos hijos'', ``madre de tres menores'', ``sus niños quedaron huérfanos''), dificultando detección por keywords simples. No existen datasets etiquetados específicos de feminicidios en español para entrenar modelos supervisados.
+    
+    \item[P-05] \textbf{Imposibilidad de análisis de patrones:} Los datos no estructurados no permiten análisis cuantitativo directo. La falta de identificadores únicos de casos impide seguimiento longitudinal. Las organizaciones no cuentan con herramientas de análisis de datos masivos ni visualización de patrones geoespaciales.
+    
+    \item[P-06] \textbf{Bloqueos técnicos de scraping:} Los medios implementan protecciones anti-bot para prevenir sobrecarga de servidores y posible robo de contenido. Cloudflare y servicios similares dificultan scraping legítimo junto con ataques maliciosos. El contenido dinámico generado por JavaScript requiere navegadores headless (Selenium, Playwright) que son lentos y detectables.
+    
+    \item[P-07] \textbf{Duplicación y ruido informativo:} Las agencias de noticias (Notimex, AP) distribuyen la misma nota base a múltiples medios. Los medios republican contenido sin agregar valor informativo nuevo. No existe identificador universal de noticias que permita detectar automáticamente fuente original vs. republicación.
+    
+    \item[P-08] \textbf{Invisibilización de casos:} Los medios locales tienen menor alcance digital y menor inversión en infraestructura web. Los casos en comunidades rurales o indígenas reciben menor cobertura periodística. Sesgos editoriales priorizan casos con características específicas (ubicación urbana, víctima con perfil mediático).
 \end{description}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Análisis de posibles consecuencias}
 
-\cdtInstrucciones{
-	Describa las consecuencias inmediatas, a mediano y largo plazo si la problemática persiste.
-}
+Las consecuencias inmediatas, a mediano y largo plazo si la problemática persiste son:
+
 \begin{description}
-	\item[P-01] Describa una de las posibles consecuencias de la problemática.
-	\item[...] ...
+    \item[P-01] \textbf{Dispersión de información:} \textbf{Inmediato:} Imposibilidad de cuantificar con precisión la dimensión del problema. \textbf{Mediano plazo:} Diseño de políticas públicas basadas en datos incompletos o sesgados. \textbf{Largo plazo:} Perpetuación de invisibilización de víctimas indirectas de feminicidio y falta de rendición de cuentas institucional.
+    
+    \item[P-02] \textbf{Trabajo manual insostenible:} \textbf{Inmediato:} Agotamiento y rotación de personal voluntario en organizaciones civiles. \textbf{Mediano plazo:} Abandono de esfuerzos de documentación por inviabilidad operativa. \textbf{Largo plazo:} Pérdida de memoria histórica de casos documentados y desarticulación de movimientos de defensa de derechos de NNA.
+    
+    \item[P-03] \textbf{Ausencia de datos estructurados:} \textbf{Inmediato:} Dificultad para generar reportes periódicos y responder solicitudes de información de medios y academia. \textbf{Mediano plazo:} Imposibilidad de evaluar efectividad de programas gubernamentales de atención a NNA huérfanos. \textbf{Largo plazo:} Desvinculación entre producción académica, activismo civil y diseño de política pública por falta de datos comunes.
+    
+    \item[P-04] \textbf{Falta de identificación automatizada:} \textbf{Inmediato:} Casos relevantes pasan desapercibidos en el volumen diario de noticias. \textbf{Mediano plazo:} Subestimación sistemática del número de NNA afectados. \textbf{Largo plazo:} Naturalización social del problema por ausencia de visibilización cuantitativa del impacto en infancias.
+    
+    \item[P-05] \textbf{Imposibilidad de análisis de patrones:} \textbf{Inmediato:} Desconocimiento de focos rojos geográficos que requieren intervención prioritaria. \textbf{Mediano plazo:} Asignación ineficiente de recursos gubernamentales y de organizaciones civiles. \textbf{Largo plazo:} Falta de investigación epidemiológica sobre factores de riesgo y efectividad de intervenciones preventivas.
+    
+    \item[P-06] \textbf{Bloqueos técnicos de scraping:} \textbf{Inmediato:} Fracaso de intentos de automatización, forzando retorno a metodologías manuales. \textbf{Mediano plazo:} Retraso en adopción de soluciones tecnológicas por percepción de inviabilidad técnica. \textbf{Largo plazo:} Brecha digital persistente entre capacidades de monitoreo de organizaciones civiles vs. actores con mayores recursos.
+    
+    \item[P-07] \textbf{Duplicación y ruido informativo:} \textbf{Inmediato:} Inflación artificial de conteos que distorsiona percepción de magnitud del problema. \textbf{Mediano plazo:} Descrédito de cifras presentadas por organizaciones civiles cuando se detecta duplicación. \textbf{Largo plazo:} Debilitamiento de credibilidad de movimientos sociales en el debate público.
+    
+    \item[P-08] \textbf{Invisibilización de casos:} \textbf{Inmediato:} NNA en comunidades marginadas quedan sin apoyo de organizaciones civiles. \textbf{Mediano plazo:} Reproducción de desigualdades estructurales en el acceso a justicia y reparación del daño. \textbf{Largo plazo:} Perpetuación intergeneracional de violencia y vulnerabilidad en poblaciones ya marginadas.
 \end{description}
  
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Características de la solución}
 
-\cdtInstrucciones{
-	Describa los componentes, características, ideas o herramientas que integran la propuestas de solución.
-}
-
-Para atender la problemática anterior se propone implementar las siguientes acciones.
+Para atender la problemática anterior se propone implementar las siguientes acciones mediante un sistema integral de recolección, análisis y estructuración de información:
 
 \begin{description}
-	\item[P-01] Describa la solución propuesta para atender el problema P-01 explicando de qué forma lo resuelve.
-	\item[P-02] ...
+    \item[P-01] \textbf{Centralización mediante agregación automática:} Implementar un sistema que consulte diariamente múltiples fuentes (feeds RSS de 10 medios nacionales, Google News API para cobertura ampliada, scraping histórico del Mapa de Feminicidios) consolidando la información dispersa en un repositorio único. Almacenar metadatos estructurados: fecha, medio, URL, título, contenido, ubicación mencionada.
+    
+    \item[P-02] \textbf{Automatización del monitoreo:} Desarrollar un recolector automatizado que opere mediante tareas programadas (cron jobs) cada 6 horas, eliminando necesidad de revisión manual constante. Reducir la carga operativa de organizaciones civiles de 10-15 horas semanales a ~2 horas de validación de casos detectados automáticamente.
+    
+    \item[P-03] \textbf{Estructuración de datos:} Transformar texto no estructurado en registros estructurados mediante pipeline de procesamiento: limpieza de texto (remoción stopwords, normalización), extracción de campos (fecha, ubicación, características del caso), asignación de identificadores únicos, y almacenamiento en formato consultable (CSV en TT1, base de datos relacional en TT2).
+    
+    \item[P-04] \textbf{Detector especializado dual-etapa:} Implementar sistema de detección en dos fases: (1) Filtro de feminicidio mediante regex y keywords especializadas (``feminicidio'', ``asesinó a su pareja'', ``violencia de género''), (2) Detector de menciones NNA mediante análisis contextual de patrones lingüísticos (``dejó N hijos'', ``madre de'', ``huérfanos'', ``menores de edad''). Alcanzar precisión $\geq$90\% con $\leq$10\% falsos positivos.
+    
+    \item[P-05] \textbf{Análisis de patrones mediante PLN:} Aplicar técnicas de clustering (DBSCAN) para agrupar noticias del mismo caso publicadas por múltiples medios. Implementar modelado de tópicos (LDA) para identificar temas recurrentes. Generar métricas agregadas por entidad federativa, rango temporal y características del caso. Proporcionar visualizaciones en dashboard web.
+    
+    \item[P-06] \textbf{Estrategia multi-fuente anti-bloqueos:} Evadir bloqueos técnicos mediante triple estrategia: (1) Feeds RSS/Atom que son públicos y no requieren scraping HTML, (2) Google News API como intermediario que ya resolvió el scraping, (3) Scraping selectivo de fuentes estructuradas (Mapa de Feminicidios) con control de tasa de peticiones. Validado mediante prototipos iterativos P0→P1→P2.
+    
+    \item[P-07] \textbf{Detección de duplicados:} Implementar sistema de deduplicación mediante vectorización TF-IDF y cálculo de similitud coseno. Establecer threshold de similitud $\geq$0.75 para marcar noticias como duplicadas. Agrupar variantes de la misma noticia mediante clustering, manteniendo solo representante canónico de cada cluster para conteos.
+    
+    \item[P-08] \textbf{Cobertura ampliada:} Incluir fuentes regionales y estatales en lista de feeds RSS monitoreados. Utilizar Google News API con queries geográficamente específicas (``feminicidio Oaxaca'', ``feminicidio Chiapas'') para capturar medios locales. Diseñar interfaz que permita a organizaciones locales reportar casos no detectados automáticamente (planeado TT2).
 \end{description}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Síntesis de la problemática}
 
-\cdtInstrucciones{
-	Redacte las conclusiones del análisis de la problemática. Explique de manera general la solución o sistema a realizar a manera de propuesta y los beneficios que se obtendrán al implementar la solución.
-}
+El análisis realizado evidencia que el problema central no es la inexistencia de información sobre feminicidios y NNA afectados, sino su dispersión, falta de estructura y el carácter manual de su recolección. La información existe en el ecosistema mediático mexicano, pero permanece como texto no estructurado distribuido en cientos de sitios web sin vinculación sistemática.
+
+Las organizaciones civiles han demostrado voluntad y capacidad de documentación, pero la metodología manual enfrenta límites de escalabilidad que ninguna cantidad de esfuerzo voluntario puede superar. Las autoridades gubernamentales reconocen el problema pero carecen de herramientas para dimensionarlo cuantitativamente y dar seguimiento individualizado.
+
+La solución propuesta no pretende reemplazar el trabajo de organizaciones civiles, sino potenciarlo mediante automatización inteligente. El sistema actuará como filtro inicial que procesa cientos de noticias diarias, identifica las potencialmente relevantes mediante técnicas de procesamiento de lenguaje natural, las estructura en formato consultable, y las presenta para validación humana y seguimiento de casos.
+
+Los beneficios esperados son múltiples: (1) \textbf{Operativo:} Reducción de 80\% del tiempo dedicado a búsqueda manual, liberando recursos para trabajo directo con familias afectadas, (2) \textbf{Informativo:} Base de datos estructurada que permita responder preguntas analíticas (¿cuántos casos en Jalisco en 2024?, ¿cuál es la edad promedio de NNA afectados?), (3) \textbf{Estratégico:} Identificación de patrones geográficos y temporales que orienten asignación de recursos y diseño de intervenciones, (4) \textbf{Político:} Evidencia cuantitativa para incidencia en política pública y exigencia de rendición de cuentas, (5) \textbf{Social:} Visibilización de víctimas indirectas del feminicidio que históricamente han permanecido invisibles en el debate público.
+
+El proyecto demuestra viabilidad técnica mediante prototipos incrementales que resolvieron bloqueos iniciales (P0→P1→P2), alcanzando capacidad de recolección y procesamiento de cientos de noticias con precisión aceptable. La fase TT2 consolidará el sistema para uso en producción por organizaciones reales.
 
 %---------------------------------------------------------
 \section{Objetivos del proyecto}
+\label{sec:objetivos}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Objetivo general}
 
-\cdtInstrucciones{
-	Redacte el objetivo general del proyecto de la forma:\\
-	VERBO EN INFINITIVO + (LO QUE SE VA A REALIZAR CON 2 O 3 CARACTERÍSTICAS RELEVANTES) + ``para'' + PROBLEMA QUE RESUELVE + ``mediante'' + 2 O 3 CARACTERÍSTICAS RELEVANTES DE LA SOLUCIÓN.
-}
-
 \begin{quotation}
-	{\em ``Objetivo''}
+    {\em ``Desarrollar un sistema automatizado de recolección, análisis y estructuración de información mediante web scraping multi-fuente, procesamiento de lenguaje natural y clustering para identificar y documentar casos de niñas, niños y adolescentes afectados por feminicidios en México publicados en medios de comunicación y fuentes públicas, proporcionando a organizaciones civiles, autoridades gubernamentales e investigadores una base de datos estructurada y consultable que facilite el seguimiento de casos, análisis de patrones epidemiológicos y evaluación de programas de atención, mediante la combinación de recolección multi-fuente (RSS, APIs, scraping histórico), detector especializado dual-etapa, pipeline de PLN con vectorización TF-IDF y clustering DBSCAN, API REST y dashboard web de visualización.''}
 \end{quotation}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Objetivos específicos}
 
-\cdtInstrucciones{
-	Liste los objetivos específicos adoptando el enfoque que más se adapte a su proyecto: por etapas, de lo general a lo específico, señalando componentes o partes de la solución, etc.
-}
+Los objetivos específicos se organizan en cuatro ejes: recolección automatizada, procesamiento inteligente, estructuración de datos y acceso a información.
 
 \begin{itemize}
-	\item...
+    \item \textbf{OE-1. Implementar sistema de recolección multi-fuente:} Desarrollar un recolector automatizado que consulte feeds RSS de 10 medios nacionales, Google News API para cobertura ampliada, y scraping histórico del Mapa de Feminicidios, operando mediante tareas programadas cada 6 horas para mantener actualización continua de información.
+    
+    \item \textbf{OE-2. Desarrollar detector especializado dual-etapa:} Construir un sistema de identificación en dos fases que primero filtre noticias de feminicidio mediante regex y keywords especializadas, y posteriormente detecte menciones de NNA afectados mediante análisis contextual de patrones lingüísticos, alcanzando precisión $\geq$90\% con $\leq$10\% falsos positivos.
+    
+    \item \textbf{OE-3. Diseñar pipeline de procesamiento de lenguaje natural:} Implementar flujo completo de PLN que incluya limpieza de texto (remoción stopwords, normalización, lematización), vectorización mediante TF-IDF con 3,000 features máximas, clustering con DBSCAN para agrupar noticias del mismo caso, y modelado de tópicos con LDA para identificar temas recurrentes.
+    
+    \item \textbf{OE-4. Implementar sistema de detección de duplicados:} Desarrollar mecanismo de deduplicación mediante cálculo de similitud coseno entre vectores TF-IDF de noticias, estableciendo threshold $\geq$0.75 para identificar republicaciones del mismo caso y evitar inflación artificial de conteos.
+    
+    \item \textbf{OE-5. Construir API REST para consulta de información:} Desarrollar interfaz de programación de aplicaciones con al menos 6 endpoints que permitan consultar noticias procesadas, buscar por keywords, obtener métricas agregadas, explorar clusters identificados, consultar noticias recientes y verificar salud del sistema.
+    
+    \item \textbf{OE-6. Diseñar dashboard web de visualización:} Crear interfaz de usuario web que presente métricas clave (total de noticias, casos con NNA, distribución temporal), visualice distribución de clusters mediante técnicas de reducción de dimensionalidad, y permita exploración interactiva de noticias individuales y sus metadatos.
+    
+    \item \textbf{OE-7. Validar viabilidad técnica mediante prototipos incrementales:} Desarrollar tres prototipos evolutivos (P0: scraping directo, P1: sistema básico RSS+K-Means, P2: sistema avanzado multi-fuente+DBSCAN) que validen estrategias de recolección, evalúen técnicas de PLN, e identifiquen limitaciones para abordar en TT2.
+    
+    \item \textbf{OE-8. Establecer arquitectura escalable con Docker:} Implementar arquitectura de contenedores que separe componentes (análisis, servidor web, almacenamiento) para facilitar despliegue, mantenimiento y escalamiento futuro del sistema en ambientes de producción.
 \end{itemize}
-
 
 %---------------------------------------------------------
 \section{Usuarios identificados}
+\label{sec:usuarios}
 
-\cdtInstrucciones{
-	Coloque un diagrama a manera de organigrama en donde se indiquen quienes serán usuarios del sistema. 
-}
+El sistema está diseñado para atender las necesidades de cuatro perfiles principales de usuarios, organizados según su relación con la problemática y los objetivos específicos de uso del sistema. La Figura~\ref{fig:organigrama} presenta la estructura de usuarios identificados y sus interrelaciones.
 
 \begin{figure}[htbp!]
-	\begin{center}
-		\includegraphics[width=.8\textwidth]{images/organigramaEm}
-		\caption{Organigrama de la Mueblería Qetzal S. A. de C. V.}
-		\label{fig:organigrama}
-	\end{center}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{organigrama}
+        \caption{Organigrama de usuarios del sistema de identificación y seguimiento de NNA afectados por feminicidios.}
+        \label{fig:organigrama}
+    \end{center}
 \end{figure}
 
+\textbf{Nota:} Crear un diagrama con los siguientes usuarios organizados jerárquicamente:
+\begin{itemize}
+    \item \textbf{Nivel 1 - Usuarios Primarios:} Organizaciones de la Sociedad Civil (Fundación Futuro con Derechos, REDIM, Data Cívica, Mapa de Feminicidios)
+    \item \textbf{Nivel 2 - Usuarios Secundarios:} Investigadores Académicos (Universidades, Centros de Investigación), Autoridades Gubernamentales (Fiscalías, SIPINNA, Comisiones de Víctimas)
+    \item \textbf{Nivel 3 - Usuarios de Apoyo:} Periodistas y Medios de Comunicación, Activistas y Defensores de Derechos Humanos
+    \item \textbf{Nivel 4 - Administradores del Sistema:} Equipo de Desarrollo (Mantenimiento, Actualización de Fuentes)
+\end{itemize}
+
+\subsection*{Descripción de perfiles de usuario}
+
+\begin{description}
+    \item[OSC-01: Coordinador de Documentación] Responsable en organizaciones civiles de mantener bases de datos de casos de feminicidio. Usa el sistema para consultar casos detectados automáticamente, validar información, descargar reportes y alimentar bases de datos internas.
+    
+    \item[OSC-02: Analista de Datos] Personal con formación técnica que realiza análisis cuantitativos para reportes institucionales. Consume API REST para extraer datos estructurados, genera visualizaciones personalizadas y calcula estadísticas específicas.
+    
+    \item[INV-01: Investigador Académico] Científico social que estudia violencia de género y derechos de infancia. Utiliza el sistema como fuente de datos para investigaciones, verifica hipótesis mediante consultas específicas y cita el sistema en publicaciones académicas.
+    
+    \item[GOB-01: Funcionario de Política Pública] Personal de gobierno responsable de diseñar o evaluar programas de atención a NNA huérfanos. Consulta métricas agregadas por entidad federativa, identifica zonas de alta incidencia y solicita reportes personalizados.
+    
+    \item[GOB-02: Fiscal Especializado] Autoridad ministerial que investiga feminicidios. Usa el sistema para cruzar casos mediáticos con carpetas de investigación y verificar cobertura periodística de casos bajo su jurisdicción.
+    
+    \item[PER-01: Periodista de Investigación] Reportero especializado en temas de género y derechos humanos. Consulta el sistema para investigaciones de largo aliento, identifica patrones noticiosos y verifica datos para reportajes.
+    
+    \item[ADM-01: Administrador del Sistema] Desarrollador responsable de mantenimiento técnico. Monitorea salud del sistema, actualiza lista de fuentes RSS, ajusta parámetros de detección y gestiona actualizaciones de software.
+\end{description}
 
 %---------------------------------------------------------
 \section{Procesos involucrados}
+\label{sec:procesos}
 
-\cdtInstrucciones{
-	Coloque el mapa de procesos de la organización y liste a continuación los proceso que serán afectados por el desarrollo del sistema. Para cada proceso indique: Clave, Nombre y descripción.
-}
+El sistema impacta procesos de trabajo existentes en organizaciones civiles y habilita nuevos procesos de análisis de datos. La Figura~\ref{fig:mapaProcASIS} presenta el mapa de procesos de una organización civil típica enfocada en derechos de NNA, identificando aquellos que serán transformados o habilitados por el sistema.
 
 \begin{figure}[htbp!]
-	\begin{center}
-		\includegraphics[width=.8\textwidth]{images/mapa}
-		\caption{Mapa de procesos de la Mueblería Qetzal S. A. de C. V.}
-		\label{fig:mapaProcASIS}
-	\end{center}
+    \begin{center}
+        \includegraphics[width=0.95\textwidth]{mapaProc}
+        \caption{Mapa de procesos de organización civil con enfoque en documentación de casos de feminicidio y atención a NNA afectados.}
+        \label{fig:mapaProcASIS}
+    \end{center}
 \end{figure}
 
+\textbf{Nota:} Crear un mapa de procesos con tres niveles:
+\begin{itemize}
+    \item \textbf{Procesos Estratégicos:} Planeación Institucional, Incidencia en Política Pública, Vinculación Interinstitucional
+    \item \textbf{Procesos Operativos (núcleo):} Monitoreo de Medios, Documentación de Casos, Análisis de Información, Seguimiento de NNA, Atención Directa
+    \item \textbf{Procesos de Soporte:} Gestión de TI, Capacitación de Personal, Administración de Datos
+\end{itemize}
+
+\subsection*{Descripción de procesos afectados}
+
 \begin{description}
-	\item[PR-01] Nombre del proceso. Descripción del proceso.
+    \item[PR-01 Monitoreo de medios de comunicación.] Proceso de revisión sistemática de fuentes periodísticas para identificar casos de feminicidio. \textbf{AS-IS:} Revisión manual diaria de 15-20 sitios web por personal voluntario (10-15 hrs/semana). \textbf{TO-BE:} Consulta automatizada cada 6 horas de 10 fuentes RSS + Google News API, reduciendo trabajo manual a validación de casos detectados (~2 hrs/semana).
+    
+    \item[PR-02 Documentación y registro de casos.] Proceso de captura estructurada de información sobre casos identificados. \textbf{AS-IS:} Llenado manual de formularios o hojas de cálculo con datos extraídos de noticias. \textbf{TO-BE:} Importación automática de casos detectados con campos pre-llenados (fecha, medio, URL, extracto relevante), requiriendo solo validación y complemento de información.
+    
+    \item[PR-03 Análisis cuantitativo de datos.] Proceso de generación de estadísticas y reportes periódicos. \textbf{AS-IS:} Conteos manuales en hojas de cálculo, gráficas básicas en Excel. \textbf{TO-BE:} Consulta de métricas agregadas vía API REST, visualizaciones automáticas en dashboard, exportación de datasets para análisis avanzado en R/Python.
+    
+    \item[PR-04 Identificación de patrones geográficos y temporales.] Proceso de análisis de tendencias para orientar estrategias de intervención. \textbf{AS-IS:} Análisis ad-hoc limitado por falta de datos estructurados. \textbf{TO-BE:} Clustering automático de casos similares, modelado de tópicos para identificar narrativas recurrentes, filtrado por entidad federativa y rango temporal.
+    
+    \item[PR-05 Elaboración de reportes institucionales.] Proceso de generación de documentos para difusión pública, financiadores y autoridades. \textbf{AS-IS:} Redacción manual con datos fragmentados de múltiples fuentes. \textbf{TO-BE:} Extracción directa de datos estructurados del sistema, garantizando actualización y precisión de cifras citadas.
+    
+    \item[PR-06 Respuesta a solicitudes de información.] Proceso de atención a consultas de medios, investigadores y autoridades. \textbf{AS-IS:} Búsquedas manuales en archivos internos con tiempo de respuesta de días. \textbf{TO-BE:} Consultas mediante API o dashboard con respuesta inmediata, filtrado por criterios específicos del solicitante.
+    
+    \item[PR-07 Detección de duplicados y validación de casos.] Proceso de verificación de unicidad de casos para evitar conteo múltiple. \textbf{AS-IS:} Comparación manual memoria-dependiente propensa a errores. \textbf{TO-BE:} Detección automática de similitud mediante vectorización TF-IDF y clustering DBSCAN.
 \end{description}
 
 %---------------------------------------------------------
 \section{Requerimientos de usuario}
+\label{sec:requerimientos_usuario}
 
-\cdtInstrucciones{
-	Identifique y describa los requerimientos del usuario señalando: id, nombre, descripción y prioridad.
-}
-
-Los requerimientos del usuario son los siguientes\FootnoteStatus:
+Los requerimientos del usuario se organizan en cinco categorías: recolección automatizada, procesamiento y análisis, consulta de información, administración del sistema, y reportes y exportación. Cada requerimiento se identifica con clave única, nombre descriptivo, descripción detallada de funcionalidad esperada, y prioridad según criticidad para objetivos del proyecto\FootnoteStatus:
 
 \begin{requerimientosU}
-	\FRitem{RU-01}{Nombre del requerimiento}{Descripción del requerimiento.}{1}{\TODO}
-	\FRitem{...}{...}{...}{...}{...}
+    \FRitem{RU-01}{Recolección automática de noticias}{El sistema debe consultar automáticamente feeds RSS de al menos 10 medios de comunicación mexicanos cada 6 horas, extrayendo título, fecha de publicación, URL, contenido y medio de origen de cada noticia nueva detectada.}{1}{\DONE}
+    
+    \FRitem{RU-02}{Integración con Google News API}{El sistema debe consultar Google News API con queries específicas de feminicidio para ampliar cobertura más allá de fuentes RSS configuradas, procesando al menos 50 resultados por consulta.}{1}{\DONE}
+    
+    \FRitem{RU-03}{Scraping histórico del Mapa de Feminicidios}{El sistema debe extraer casos documentados del sitio web del Mapa de Feminicidios en México para complementar cobertura temporal de los últimos 6 meses, respetando límites de tasa de peticiones.}{2}{\DONE}
+    
+    \FRitem{RU-04}{Detección automática de feminicidios}{El sistema debe identificar automáticamente noticias relacionadas con feminicidio mediante búsqueda de keywords especializadas (``feminicidio'', ``asesinó a su pareja'', ``violencia de género''), alcanzando precisión $\geq$85\%.}{1}{\DONE}
+    
+    \FRitem{RU-05}{Detección de menciones de NNA}{El sistema debe identificar automáticamente menciones de niñas, niños y adolescentes afectados mediante análisis de patrones lingüísticos (``dejó N hijos'', ``madre de'', ``huérfanos''), con tasa de falsos positivos $\leq$10\%.}{1}{\DONE}
+    
+    \FRitem{RU-06}{Limpieza y normalización de texto}{El sistema debe preprocesar el contenido de noticias removiendo stopwords, normalizando caracteres especiales, convirtiendo a minúsculas y aplicando lematización para facilitar análisis posterior.}{1}{\DONE}
+    
+    \FRitem{RU-07}{Vectorización TF-IDF}{El sistema debe convertir texto de noticias a representación vectorial mediante TF-IDF con máximo 3,000 features, habilitando análisis cuantitativo de similitud y clustering.}{1}{\DONE}
+    
+    \FRitem{RU-08}{Clustering de noticias similares}{El sistema debe agrupar automáticamente noticias del mismo caso publicadas por múltiples medios mediante DBSCAN con parámetros adaptativos (eps=0.3, min\_samples=2), facilitando identificación de casos únicos.}{1}{\DONE}
+    
+    \FRitem{RU-09}{Modelado de tópicos principales}{El sistema debe identificar temas recurrentes en corpus de noticias mediante LDA con 5 tópicos, extrayendo las 10 palabras más representativas de cada tópico para interpretación.}{2}{\DONE}
+    
+    \FRitem{RU-10}{Detección de duplicados}{El sistema debe calcular similitud coseno entre pares de noticias e identificar como duplicadas aquellas con similitud $\geq$0.75, evitando conteo múltiple del mismo caso.}{1}{\DONE}
+    
+    \FRitem{RU-11}{API REST - Consultar todas las noticias}{El sistema debe exponer endpoint \texttt{GET /api/noticias} que retorne lista completa de noticias procesadas con sus metadatos (id, título, fecha, medio, URL, cluster, menciona\_nna) en formato JSON.}{1}{\DONE}
+    
+    \FRitem{RU-12}{API REST - Buscar por keywords}{El sistema debe exponer endpoint \texttt{GET /api/search?q=<query>} que retorne noticias cuyo contenido contenga las palabras buscadas, permitiendo búsquedas personalizadas de usuarios.}{1}{\DONE}
+    
+    \FRitem{RU-13}{API REST - Obtener métricas agregadas}{El sistema debe exponer endpoint \texttt{GET /api/metrics} que retorne estadísticas clave: total de noticias, porcentaje con mención de NNA, número de clusters, distribución temporal y coherencia de tópicos LDA.}{1}{\DONE}
+    
+    \FRitem{RU-14}{API REST - Explorar clusters}{El sistema debe exponer endpoint \texttt{GET /api/clusters} que retorne lista de clusters identificados con sus noticias miembro, facilitando exploración de casos únicos agrupados.}{1}{\DONE}
+    
+    \FRitem{RU-15}{API REST - Noticias recientes}{El sistema debe exponer endpoint \texttt{GET /api/recent?days=N} que retorne noticias de los últimos N días, permitiendo consultas de información actualizada.}{2}{\DONE}
+    
+    \FRitem{RU-16}{API REST - Salud del sistema}{El sistema debe exponer endpoint \texttt{GET /api/health} que retorne estado del sistema (operativo/degradado/fallido) y timestamp de última actualización de datos.}{2}{\DONE}
+    
+    \FRitem{RU-17}{Dashboard web - Visualización de métricas}{El sistema debe presentar interfaz web con tarjetas que muestren métricas clave actualizadas: total de noticias procesadas, casos con NNA, número de clusters y periodo de cobertura.}{1}{\DONE}
+    
+    \FRitem{RU-18}{Dashboard web - Gráfica de distribución temporal}{El sistema debe presentar gráfica de línea o barras que muestre distribución de noticias por mes/semana para identificar tendencias temporales.}{2}{\DOING}
+    
+    \FRitem{RU-19}{Dashboard web - Visualización de clusters}{El sistema debe presentar visualización 2D de clusters mediante reducción de dimensionalidad (t-SNE o PCA) con colores diferenciados por cluster, permitiendo inspección visual de agrupación.}{2}{\DOING}
+    
+    \FRitem{RU-20}{Dashboard web - Tabla explorable de noticias}{El sistema debe presentar tabla paginada con noticias procesadas, permitiendo ordenamiento por columnas, filtrado básico y acceso a URL original de cada noticia.}{1}{\DONE}
+    
+    \FRitem{RU-21}{Almacenamiento persistente}{El sistema debe almacenar noticias procesadas en formato CSV con codificación UTF-8, garantizando persistencia de datos entre reinicios del sistema.}{1}{\DONE}
+    
+    \FRitem{RU-22}{Arquitectura Docker}{El sistema debe estar contenerizado en Docker con separación de servicios: contenedor de análisis/recolección y contenedor de servidor web, facilitando despliegue y escalamiento.}{1}{\DONE}
+    
+    \FRitem{RU-23}{Configuración de fuentes externa}{El sistema debe leer lista de fuentes RSS desde archivo de configuración externo, permitiendo agregar o remover fuentes sin modificar código fuente.}{2}{\TODO}
+    
+    \FRitem{RU-24}{Logs de operación}{El sistema debe generar logs con nivel de detalle configurable (INFO/DEBUG) que registren operaciones críticas: noticias recolectadas, casos detectados, errores de recolección y métricas de procesamiento.}{2}{\DOING}
+    
+    \FRitem{RU-25}{Exportación de datasets}{El sistema debe permitir exportar subconjuntos de datos filtrados por criterios (fecha, medio, presencia de NNA) en formato CSV para análisis externo en R/Python/Excel.}{2}{\TODO}
+    
+    \FRitem{RU-26}{Reportes automatizados}{El sistema debe generar reportes periódicos (semanales/mensuales) en formato PDF o HTML con métricas clave, noticias destacadas y análisis de tendencias.}{3}{\TODO}
+    
+    \FRitem{RU-27}{Alertas de casos relevantes}{El sistema debe enviar notificaciones (email/webhook) cuando detecte casos que cumplan criterios específicos (múltiples NNA, ubicación prioritaria), habilitando respuesta rápida de organizaciones.}{3}{\TODO}
 \end{requerimientosU}
 
 %---------------------------------------------------------
-\section{Especificación de plataforma}	
+\section{Especificación de plataforma}
+\label{sec:plataforma}	
 
-\cdtInstrucciones{
-	Coloque un diagrama y su descripción para aclarar el tipo de solución propuesta. \\
-	
- En esta sección se debe aclarar:
-	
-\begin{description}
-	\item[Tipo de sistema:] Web, aplicación móvil, de escritorio, híbrida, etc.
-	\item[Software requerido:] Programas que se deberán instalar, desde el sistema operativo, compiladores, interpretes, servidores, etc.
-	\item[Hardware requerido:] CPU, núcleos, velocidad, memoria, disco duro, etc.
-	\item[servicios:] De conexión, seguridad, firewall, respaldo de energía, redundancia, uso de raids, etc.
-\end{description}
-}
+El sistema se implementa como aplicación web con arquitectura de contenedores Docker, adoptando enfoque de microservicios que separa componentes de recolección/análisis y presentación. La Figura~\ref{fig:arquitectura} presenta la estructura general del sistema, detallando la interacción entre componentes, flujo de datos y tecnologías empleadas.
 
 \begin{figure}[htbp!]
-	\begin{center}
-		\fbox{\includegraphics[width=.6\textwidth]{images/arquitectura}}
-		\caption{Arquitectura del sistema.}
-		\label{fig:arquitectura}
-	\end{center}
+    \begin{center}
+        \fbox{\includegraphics[width=0.85\textwidth]{arquitectura}}
+        \caption{Arquitectura del sistema de identificación y seguimiento de NNA afectados por feminicidios.}
+        \label{fig:arquitectura}
+    \end{center}
 \end{figure}
 
-En la figura~\ref{fig:arquitectura} se describe la estructura del sistema, en ella se detalla ...
+\textbf{Nota:} Crear diagrama de arquitectura con los siguientes componentes:
+\begin{itemize}
+    \item \textbf{Capa de Recolección:} Recolector RSS, Google News API Client, Scraper Histórico → Almacenamiento temporal
+    \item \textbf{Capa de Procesamiento:} Detector Dual-Etapa, Pipeline PLN (Limpieza, TF-IDF, DBSCAN, LDA) → Base de datos CSV
+    \item \textbf{Capa de Presentación:} API REST Flask (6 endpoints) ← Dashboard Web (HTML/JS/Chart.js)
+    \item \textbf{Infraestructura:} Docker Container 1 (Análisis), Docker Container 2 (Web), Volumen compartido (datos)
+\end{itemize}
 
+En la Figura~\ref{fig:arquitectura} se describe la estructura del sistema contenerizado. El \textbf{Contenedor de Análisis} ejecuta el recolector automatizado mediante cron cada 6 horas, procesa noticias con pipeline PLN y almacena resultados en CSV. El \textbf{Contenedor Web} expone API REST Flask y sirve dashboard HTML para consulta. Ambos contenedores acceden a volumen Docker compartido que garantiza persistencia de datos.
 
+\subsection*{Especificaciones técnicas detalladas}
+
+\begin{description}
+    \item[Tipo de sistema:] Aplicación web con arquitectura híbrida: backend de procesamiento batch (tareas programadas) + servidor web para consultas en tiempo real. Dashboard web responsive accesible desde navegadores modernos sin requerir instalación cliente.
+    
+    \item[Lenguajes de programación:] Python 3.9+ para todo el backend (recolección, análisis, API REST). HTML5, CSS3 y JavaScript ES6 para frontend del dashboard. Uso de f-strings y type hints en Python.
+    
+    \item[Frameworks y librerías principales:] 
+    \begin{itemize}
+        \item \textbf{Web:} Flask 2.0+ para API REST y servidor web, Flask-CORS para habilitación de peticiones cross-origin
+        \item \textbf{Recolección:} \texttt{feedparser} para parsing RSS/Atom, \texttt{requests} para HTTP, \texttt{beautifulsoup4} para scraping HTML selectivo
+        \item \textbf{PLN:} \texttt{scikit-learn} para TF-IDF/DBSCAN/LDA, \texttt{nltk} o \texttt{spacy} para procesamiento de texto (lematización, stopwords)
+        \item \texttt{pandas} para manipulación de datos, \texttt{numpy} para operaciones vectoriales
+    \end{itemize}
+    
+    \item[Sistema operativo:] Linux Ubuntu 20.04 LTS o superior en ambientes de desarrollo y producción. Docker permite abstracción del SO host, garantizando portabilidad a Windows/macOS para desarrollo local.
+    
+    \item[Contenedores Docker:] 
+    \begin{itemize}
+        \item \textbf{Imagen base:} python:3.9-slim (200MB) para reducir tamaño de contenedores
+        \item \textbf{Contenedor 1  - Análisis:} Python + librerías PLN + crontab, ejecuta \texttt{data\_collector.py} cada 6 horas
+        \item \textbf{Contenedor 2 - Web:} Python + Flask + archivos estáticos HTML/CSS/JS, expone puerto 5000
+        \item \textbf{Volumen compartido:} \texttt{/app/data} montado en ambos contenedores para acceso a CSV de noticias
+    \end{itemize}
+    
+    \item[Almacenamiento de datos:] 
+    \begin{itemize}
+        \item \textbf{TT1:} Archivos CSV con codificación UTF-8, tamaño estimado ~5MB por 1,000 noticias
+        \item \textbf{TT2 (planeado):} Migración a PostgreSQL 13+ o MySQL 8+ con esquema normalizado, índices en fecha/medio, soporte de búsqueda full-text
+    \end{itemize}
+    
+    \item[Requisitos de hardware - Desarrollo/Prototipo:] 
+    \begin{itemize}
+        \item \textbf{CPU:} 2 núcleos mínimo, 4 núcleos recomendado (procesamiento PLN intensivo)
+        \item \textbf{RAM:} 4GB mínimo, 8GB recomendado (vectorización TF-IDF de corpus grande)
+        \item \textbf{Disco:} 10GB disponibles (sistema operativo + Docker images + datos + logs)
+        \item \textbf{Red:} Conexión Internet estable para recolección de fuentes externas
+    \end{itemize}
+    
+    \item[Requisitos de hardware - Producción (escalado):] 
+    \begin{itemize}
+        \item \textbf{CPU:} 4-8 núcleos para paralelización de procesamiento PLN
+        \item \textbf{RAM:} 16-32GB para mantener vectores TF-IDF en memoria y cache de resultados
+        \item \textbf{Disco:} SSD con 50GB+ para base de datos creciente y respaldos
+        \item \textbf{Red:} Ancho de banda de 100Mbps+ para manejo de tráfico concurrente a dashboard
+    \end{itemize}
+    
+    \item[Seguridad y disponibilidad:] 
+    \begin{itemize}
+        \item \textbf{HTTPS:} Certificado SSL/TLS mediante Let's Encrypt para cifrado de comunicaciones
+        \item \textbf{Firewall:} Exponer solo puerto 443 (HTTPS) y 22 (SSH administración), bloquear acceso directo a puerto 5000
+        \item \textbf{Respaldos:} Snapshot diario de volumen Docker con datos, retención de 30 días
+        \item \textbf{Monitoreo:} Logs centralizados con rotación semanal, alertas de caída de servicio mediante healthcheck
+        \item \textbf{Autenticación:} TT1 sin autenticación (prototipo), TT2 implementará OAuth2 o JWT para control de acceso
+    \end{itemize}
+    
+    \item[Servicios externos dependientes:] 
+    \begin{itemize}
+        \item Feeds RSS de medios mexicanos (gratuitos, públicos)
+        \item Google News API o Google Custom Search API (cuota gratuita: 100 consultas/día)
+        \item Mapa de Feminicidios en México (scraping respetuoso con rate limiting)
+    \end{itemize}
+    
+    \item[Despliegue y escalamiento:] 
+    \begin{itemize}
+        \item \textbf{TT1:} Servidor Linux único (VM o bare metal) con Docker Compose
+        \item \textbf{TT2:} Migración opcional a Kubernetes para orquestación, horizontal pod autoscaling, y distribución de carga
+        \item \textbf{CI/CD:} Pipeline con GitHub Actions para testing automatizado y despliegue continuo
+    \end{itemize}
+\end{description}
+
+La arquitectura propuesta prioriza simplicidad operativa en TT1 (demostración de viabilidad técnica) mientras establece bases para escalamiento en TT2 (sistema de producción). La contenerización facilita replicación del ambiente de desarrollo, reduce fricción en transferencia de conocimiento, y habilita despliegue en infraestructura diversa (servidores institucionales, cloud providers, hardware de organizaciones civiles).

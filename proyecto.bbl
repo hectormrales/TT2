@@ -1,0 +1,89 @@
+\begin{thebibliography}{}
+
+\bibitem[Blei et~al., 2003]{lda_blei}
+Blei, D.~M., Ng, A.~Y., and Jordan, M.~I. (2003).
+\newblock Latent dirichlet allocation.
+\newblock {\em Journal of Machine Learning Research}, 3:993--1022.
+
+\bibitem[de~Diputados, 2012]{feminicidio_legal}
+de~Diputados, C. (2012).
+\newblock Código penal federal - artículo 325.
+\newblock {\em Diario Oficial de la Federación}.
+\newblock Reforma publicada DOF 14-06-2012.
+
+\bibitem[de~Gobernación, 2023]{feminicidio_mexico_2023}
+de~Gobernación, S. (2023).
+\newblock Información sobre violencia contra las mujeres. incidencia delictiva
+  y llamadas de emergencia 9-1-1.
+\newblock {\em SESNSP - Secretariado Ejecutivo del Sistema Nacional de
+  Seguridad Pública}.
+\newblock Consultado en noviembre 2025.
+
+\bibitem[Devlin et~al., 2019]{bert_devlin}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019).
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock In {\em Proceedings of NAACL-HLT 2019}, pages 4171--4186.
+
+\bibitem[{Docker Inc.}, 2025]{docker_documentation}
+{Docker Inc.} (2025).
+\newblock Docker documentation.
+\newblock \url{https://docs.docker.com}.
+\newblock Consultado en enero 2026.
+
+\bibitem[Ester et~al., 1996]{dbscan_ester}
+Ester, M., Kriegel, H.-P., Sander, J., and Xu, X. (1996).
+\newblock A density-based algorithm for discovering clusters in large spatial
+  databases with noise.
+\newblock {\em Proceedings of the Second International Conference on Knowledge
+  Discovery and Data Mining (KDD-96)}, pages 226--231.
+
+\bibitem[Grinberg, 2018]{flask_grinberg}
+Grinberg, M. (2018).
+\newblock {\em Flask Web Development: Developing Web Applications with Python}.
+\newblock O'Reilly Media, 2nd edition.
+
+\bibitem[Honnibal and Montani, 2023]{spacy}
+Honnibal, M. and Montani, I. (2023).
+\newblock spacy: Industrial-strength natural language processing.
+\newblock \url{https://spacy.io}.
+
+\bibitem[MacQueen, 1967]{kmeans_macqueen}
+MacQueen, J. (1967).
+\newblock Some methods for classification and analysis of multivariate
+  observations.
+\newblock In {\em Proceedings of the Fifth Berkeley Symposium on Mathematical
+  Statistics and Probability}, volume~1, pages 281--297.
+
+\bibitem[Manning and Schütze, 1999]{nlp_manning}
+Manning, C.~D. and Schütze, H. (1999).
+\newblock {\em Foundations of Statistical Natural Language Processing}.
+\newblock MIT Press, Cambridge, MA.
+
+\bibitem[{ONU Mujeres México}, 2023]{onu_mujeres_2023}
+{ONU Mujeres México} (2023).
+\newblock Violencia feminicida en méxico: Aproximaciones y tendencias.
+
+\bibitem[Pedregosa et~al., 2011]{scikit_learn}
+Pedregosa, F. et~al. (2011).
+\newblock Scikit-learn: Machine learning in python.
+
+\bibitem[Raschka and Mirjalili, 2019]{python_ml_raschka}
+Raschka, S. and Mirjalili, V. (2019).
+\newblock {\em Python Machine Learning: Machine Learning and Deep Learning with
+  Python, scikit-learn, and TensorFlow 2}.
+\newblock Packt Publishing, 3rd edition.
+
+\bibitem[{Red por los Derechos de la Infancia en México}, 2023]{redim_2023}
+{Red por los Derechos de la Infancia en México} (2023).
+\newblock Infancia y adolescencia en méxico: Análisis de datos 2023.
+
+\bibitem[Richardson, 2023]{beautifulsoup}
+Richardson, L. (2023).
+\newblock Beautiful soup documentation.
+
+\bibitem[Salton and McGill, 1983]{tfidf_salton}
+Salton, G. and McGill, M.~J. (1983).
+\newblock Introduction to modern information retrieval.
+
+\end{thebibliography}

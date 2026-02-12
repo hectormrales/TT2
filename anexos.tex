@@ -1,0 +1,115 @@
+% Anexos del Documento
+
+\section{Glosario de Términos}
+
+\subsection*{NNA}
+Niñas, Niños y Adolescentes. Término utilizado en el marco jurídico mexicano para referirse a personas menores de 18 años.
+
+\subsection*{Feminicidio}
+Delito tipificado en el Código Penal Federal como el asesinato de una mujer por razones de género, con agravantes específicas contempladas en el artículo 325.
+
+\subsection*{Procesamiento de Lenguaje Natural (PLN)}
+Rama de la inteligencia artificial que permite a las computadoras entender, interpretar y generar lenguaje humano de manera útil.
+
+\subsection*{Web Scraping}
+Técnica de extracción automática de información de sitios web mediante programas informáticos.
+
+\subsection*{RSS (Really Simple Syndication)}
+Formato XML utilizado para distribuir contenido actualizado de sitios web de forma automatizada.
+
+\subsection*{TF-IDF}
+Term Frequency - Inverse Document Frequency. Medida estadística que evalúa la importancia de una palabra en un documento dentro de una colección.
+
+\subsection*{Clustering}
+Técnica de aprendizaje no supervisado que agrupa elementos similares en conjuntos denominados clusters.
+
+\subsection*{API REST}
+Application Programming Interface basada en el estilo arquitectural REST que permite la comunicación entre sistemas mediante protocolo HTTP.
+
+\section{Configuración del Entorno de Desarrollo}
+
+\subsection*{Requisitos del Sistema}
+\begin{itemize}
+    \item Python 3.9 o superior
+    \item Docker Desktop 4.0 o superior
+    \item 8 GB RAM mínimo (16 GB recomendado)
+    \item 10 GB espacio en disco
+    \item Sistema operativo: Windows 10/11, macOS 11+, o Linux (Ubuntu 20.04+)
+\end{itemize}
+
+\subsection*{Librerías Python Principales}
+\begin{itemize}
+    \item \texttt{scikit-learn} 1.3.0 - Algoritmos de machine learning
+    \item \texttt{Flask} 2.3.0 - Framework web
+    \item \texttt{pandas} 2.0.0 - Análisis de datos
+    \item \texttt{beautifulsoup4} 4.12.0 - Parsing HTML
+    \item \texttt{feedparser} 6.0.10 - Procesamiento RSS
+    \item \texttt{spacy} 3.6.0 - Procesamiento de lenguaje natural
+\end{itemize}
+
+\section{Ejemplos de Casos de Uso}
+
+\subsection*{Caso de Éxito: Detección de Cluster de Feminicidios en Chihuahua}
+
+Durante las pruebas del Prototipo 2, el sistema identificó automáticamente un cluster de 12 noticias relacionadas con casos de feminicidio en el estado de Chihuahua durante un periodo de 3 semanas, permitiendo detectar un patrón geográfico-temporal que no había sido documentado previamente por las organizaciones civiles.
+
+\subsection*{Caso de Refinamiento: Reducción de Falsos Positivos}
+
+La implementación del detector de dos etapas redujo la tasa de falsos positivos del 28\% (P1) al 10\% (P2), mejorando significativamente la calidad de los datos recolectados y reduciendo el tiempo de validación manual requerido.
+
+\section{Código de Ejemplo: Detector de Relevancia}
+
+\begin{lstlisting}[language=Python, caption=Fragmento del detector de relevancia de dos etapas]
+def is_relevant(title, description):
+    """Detector de dos etapas para identificar noticias relevantes"""
+    
+    # Etapa 1: Filtro rapido con palabras clave
+    keywords = ['feminicidio', 'asesinato de mujer', 'hijos',
+                'huerfanos', 'menores', 'ninos']
+    text = (title + ' ' + description).lower()
+    
+    if not any(keyword in text for keyword in keywords):
+        return False
+    
+    # Etapa 2: Validacion semantica con TF-IDF
+    vector = vectorizer.transform([text])
+    similarity = cosine_similarity(vector, reference_vectors)
+    
+    return similarity.max() > 0.3
+\end{lstlisting}
+
+\section{Diagramas Complementarios}
+
+\subsection*{Flujo de Procesamiento de Noticias}
+
+El flujo completo de procesamiento incluye las siguientes etapas:
+\begin{enumerate}
+    \item Recolección desde múltiples fuentes
+    \item Deduplicación por URL y similitud de contenido
+    \item Detección de relevancia (dos etapas)
+    \item Extracción de características con TF-IDF
+    \item Clustering automático
+    \item Almacenamiento en formato JSON
+    \item Exposición mediante API REST
+    \item Visualización en dashboard web
+\end{enumerate}
+
+\section{Referencias de Contacto}
+
+\subsection*{Organizaciones Colaboradoras}
+\begin{itemize}
+    \item \textbf{Fundación Futuro con Derechos} \\
+          Organización enfocada en la defensa de derechos de NNA en situación de orfandad por feminicidio
+    
+    \item \textbf{Red por los Derechos de la Infancia en México (REDIM)} \\
+          Red de organizaciones civiles dedicadas a la promoción y defensa de los derechos de la infancia
+\end{itemize}
+
+\subsection*{Autores del Proyecto}
+\begin{itemize}
+    \item \textbf{Herrera Ramírez Emilio Alejandro} \\
+          Estudiante de Ingeniería en Sistemas Computacionales - ESCOM IPN
+    
+    \item \textbf{Morales Martínez Héctor Alberto} \\
+          Estudiante de Ingeniería en Sistemas Computacionales - ESCOM IPN
+\end{itemize}
